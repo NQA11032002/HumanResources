@@ -6,7 +6,10 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
-
+## About Website Human Resources
+- New new creative feature:
+- Thực tế cho thấy năm nào cũng có sinh viên ra trường và cũng có rất nhiều sinh viên mất rất nhiều thời gian để đi tìm công việc phù hợp với chuyên ngành mình, chí ít còn có người thất nghiệp.
+- Doanh nghiệp nào cũng cần một lượng nhân lực lớn nhưng lại khó khăn trong việc tìm kiếm, Website Nhân sự giúp doanh nghiệp có thể tìm kiếm nguồn nhân lực dễ dàng hơn cũng như sinh viên năm 3 năm 4 có thể sớm nhận được hợp đồng từ các doanh nghiệp ngay khi còn đang đi học.
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
