@@ -10,8 +10,8 @@
 ## About Website Human Resources
 
 - New new creative feature:
-- Thực tế cho thấy năm nào cũng có sinh viên ra trường và cũng có rất nhiều sinh viên mất rất nhiều thời gian để đi tìm công việc phù hợp với chuyên ngành mình, chí ít còn có người thất nghiệp.
-- Doanh nghiệp nào cũng cần một lượng nhân lực lớn nhưng lại khó khăn trong việc tìm kiếm, Website Nhân sự giúp doanh nghiệp có thể tìm kiếm nguồn nhân lực dễ dàng hơn cũng như sinh viên năm 3 năm 4 có thể sớm nhận được hợp đồng từ các doanh nghiệp ngay khi còn đang đi học.
+- In fact, every year, there are students graduating from school and there are also many students who take a lot of time to find a job suitable for their major, at least some people are unemployed.
+- Every business needs a large amount of human resources but it is difficult to find, the Human Resources Website helps businesses find human resources more easily as well as 3rd year 4th year students can get a contract soon. money from businesses while still in school.
 
 ## About Laravel
 
