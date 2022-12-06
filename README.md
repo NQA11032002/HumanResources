@@ -7,6 +7,12 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## About Website Human Resources
+
+- New new creative feature:
+- In fact, every year, there are students graduating from school and there are also many students who take a lot of time to find a job suitable for their major, at least some people are unemployed.
+- Every business needs a large amount of human resources but it is difficult to find, the Human Resources Website helps businesses find human resources more easily as well as 3rd year 4th year students can get a contract soon. money from businesses while still in school.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
