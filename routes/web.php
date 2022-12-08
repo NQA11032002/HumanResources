@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\User\Personally\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::prefix("personally")->name("personally.")->group(function () {
+    Route::get("/", [HomeController::class, "getHome"])->name("home");
+    Route::get("/post-hot", [HomeController::class, "getPostHotEmployer"])->name("posts_hot_employer");
+    Route::get("/post-vip", [HomeController::class, "getPostVipEmployer"])->name("posts_vip_employer");
 });
