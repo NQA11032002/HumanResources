@@ -9,9 +9,8 @@ use App\Models\homeModel;
 class HomeController extends Controller
 {
     public function getHome(){
-        $title = "Home Employer New";
-
-        $worksNew = $this->getWorks("new");
+        $title = "Home Employer Hot";
+        $worksNew = $this->getWorks("hot");
         return view("User.Personally.Pages.PostHotEmployer", compact("title","worksNew"));
     }
 
@@ -20,6 +19,13 @@ class HomeController extends Controller
 
         $worksVip = $this->getWorks("vip");
         return view("User.Personally.Pages.PostVipEmployer", compact("title","worksVip"));
+    }
+    public function getPostNewEmployer()
+    {
+        $title = "Home Employer New";
+
+        $worksNew = $this->getWorks("new");
+        return view("User.Personally.Pages.PostNewEmployer", compact("title","worksNew"));
     }
 
     function getWorks($typeWork)
@@ -30,13 +36,13 @@ class HomeController extends Controller
         {
             $result = homeModel::join('infor_company as cp', 'article_company.id_company', '=', 'cp.id')
                       ->where("article_company.salary_from", '>=', 20000000)
-                      ->where("article_company.status", 1)->paginate(2);
+                      ->where("article_company.status", 1)->paginate(6);
         }
         else if($typeWork == "new")
         {
             $result = homeModel::join('infor_company as cp', 'article_company.id_company', '=', 'cp.id')
-                      ->whereDate("article_company.date_at", date('Y-m-d'))
-                      ->where("article_company.status", 1)->paginate(2);
+            ->orderBy('article_company.date_at', 'DESC')->paginate(6);
+
         }
 
         return $result;
