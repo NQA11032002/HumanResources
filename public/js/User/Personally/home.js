@@ -1,7 +1,7 @@
 $('.slider_top-career--items').slick({
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 5,
+    slidesToScroll: 5,
     speed: 300
 });
 

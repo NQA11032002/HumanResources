@@ -15,7 +15,6 @@ use App\Http\Controllers\User\Personally\HomeController;
 */
 
 Route::prefix("personally")->name("personally.")->group(function () {
-    Route::get("/", [HomeController::class, "getHome"])->name("home");
-    Route::get("/post-hot", [HomeController::class, "getPostHotEmployer"])->name("posts_hot_employer");
-    Route::get("/post-vip", [HomeController::class, "getPostVipEmployer"])->name("posts_vip_employer");
+    Route::get("/", [HomeController::class, "getHome"])->name("home-post-hot");
+    Route::get("/post-vip", [HomeController::class, "getPostVipEmployer"])->name("home-post-vip");
 });

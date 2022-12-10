@@ -13,10 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create("position", function (Blueprint $table) {
-            $table->increments("id")->unsigned();
-            $table->string("name");
-        });
+        // Schema::create("position", function (Blueprint $table) {
+        //     $table->increments("id")->unsigned();
+        //     $table->string("name");
+        // });
     }
 
     /**

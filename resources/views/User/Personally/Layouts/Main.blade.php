@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/User/Personally/index.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/User/Personally/Index.css') }}">
 
     @yield('css')
 </head>
@@ -26,6 +26,7 @@
         </div>
     </main>
 
+    @include('User/Personally/Blocks/Footer')
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     @yield("js")

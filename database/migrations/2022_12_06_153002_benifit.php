@@ -13,13 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create("benifit", function (Blueprint $table) {
-            $table->increments("id")->unsigned();
-            $table->integer("id_company")->unsigned();
-            $table->string("name");
+        // Schema::create("benifit", function (Blueprint $table) {
+        //     $table->increments("id")->unsigned();
+        //     $table->integer("id_company")->unsigned();
+        //     $table->string("name");
 
-            $table->foreign("id_company")->references("id")->on("infor_company");
-        });
+        //     $table->foreign("id_company")->references("id")->on("infor_company");
+        // });
     }
 
     /**

@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create("infor_company", function (Blueprint $table) {
             $table->increments("id")->unsigned();
             $table->integer("id_account")->unsigned();
-            $table->integer("id_worktype")->unsigned();
+            $table->integer("id_career")->unsigned();
             $table->integer("amount_staff");
             $table->string("name");
             $table->text("website");
@@ -30,10 +30,9 @@ return new class extends Migration
             $table->integer("status");
 
 
-            $table->foreign("id_account")->references("id")->on("account")->onDelete('cascade');
-            $table->foreign("id_worktype")->references("id")->on("worktype_personally");
-        });
-    }
+            $table->foreign("id_account")->references("id")->on("account");
+            $table->foreign("id_career")->references("id")->on("categories_career");
+        });    }
 
     /**
      * Reverse the migrations.

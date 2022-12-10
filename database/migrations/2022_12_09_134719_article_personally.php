@@ -16,10 +16,10 @@ return new class extends Migration
         Schema::create("article_personally", function (Blueprint $table) {
             $table->increments("id")->unsigned();
             $table->integer("id_personally")->unsigned();
-            $table->integer("id_expriences")->unsigned();
             $table->integer("id_level")->unsigned();
             $table->string("id_city");
             $table->string("id_district");
+            $table->string("experiences");
             $table->text("title");
             $table->double("salary_from");
             $table->double("salary_to");
@@ -29,10 +29,8 @@ return new class extends Migration
             $table->integer("status")->unsigned();
 
             $table->foreign("id_personally")->references("id")->on("infor_personally");
-            $table->foreign("id_expriences")->references("id")->on("experiences_personally");
             $table->foreign("id_level")->references("id")->on("level_personally");
-        });
-    }
+        });    }
 
     /**
      * Reverse the migrations.

@@ -13,14 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        // Schema::create("address_work", function (Blueprint $table) {
+        // Schema::create("histories_used", function (Blueprint $table) {
         //     $table->increments("id")->unsigned();
         //     $table->integer("id_company")->unsigned();
-        //     $table->string("id_city");
-        //     $table->string("id_district");
-        //     $table->text("address");
+        //     $table->integer("id_categories_used")->unsigned();
+        //     $table->date("date_used");
+        //     $table->string("role_used");
 
         //     $table->foreign("id_company")->references("id")->on("infor_company");
+        //     $table->foreign("id_categories_used")->references("id")->on("categories_used");
         // });
     }
 
@@ -31,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists("address_work");
+        Schema::dropIfExists("histories_used");
     }
 };

@@ -13,19 +13,19 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create("infor_contact", function (Blueprint $table) {
-            $table->increments("id")->unsigned();
-            $table->integer("id_company")->unsigned();
-            $table->integer("id_nationality")->unsigned();
-            $table->string("id_city");
-            $table->string("phone",12);
-            $table->string("name");
-            $table->string("position");
-            $table->string("address");
+        // Schema::create("infor_contact", function (Blueprint $table) {
+        //     $table->increments("id")->unsigned();
+        //     $table->integer("id_company")->unsigned();
+        //     $table->integer("id_nationality")->unsigned();
+        //     $table->string("id_city");
+        //     $table->string("phone",12);
+        //     $table->string("name");
+        //     $table->string("position");
+        //     $table->string("address");
 
-            $table->foreign("id_company")->references("id")->on("infor_company");
-            $table->foreign("id_nationality")->references("id")->on("nationality");
-        });
+        //     $table->foreign("id_company")->references("id")->on("infor_company");
+        //     $table->foreign("id_nationality")->references("id")->on("nationality");
+        // });
     }
 
     /**

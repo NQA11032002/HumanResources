@@ -10,7 +10,7 @@
 
         <ul class="nav justify-content-between pagination align-items-center">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{ route("personally.home") }}">Trang chủ</a>
+                <a class="nav-link active" aria-current="page" href="{{ route("personally.home-post-hot") }}">Trang chủ</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Tìm việc làm</a>

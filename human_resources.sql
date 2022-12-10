@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 06, 2022 lúc 05:15 PM
+-- Thời gian đã tạo: Th12 10, 2022 lúc 07:25 AM
 -- Phiên bản máy phục vụ: 10.4.24-MariaDB
 -- Phiên bản PHP: 8.1.6
 
@@ -37,19 +37,14 @@ CREATE TABLE `account` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- --------------------------------------------------------
-
 --
--- Cấu trúc bảng cho bảng `address_work`
+-- Đang đổ dữ liệu cho bảng `account`
 --
 
-CREATE TABLE `address_work` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `id_company` int(10) UNSIGNED NOT NULL,
-  `id_city` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `id_district` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `address` text COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+INSERT INTO `account` (`id`, `id_roles`, `email`, `passwords`, `status`, `created_at`, `updated_at`) VALUES
+(1, 1, 'quocem@gmail.com', '10', 1, NULL, NULL),
+(2, 2, 'quocem1@gmail.com', '30', 1, NULL, NULL),
+(3, 1, 'quocem2@gmail.com', '18', 1, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -60,13 +55,12 @@ CREATE TABLE `address_work` (
 CREATE TABLE `article_company` (
   `id` int(10) UNSIGNED NOT NULL,
   `id_fields_career` int(10) UNSIGNED NOT NULL,
-  `id_worktype` int(10) UNSIGNED NOT NULL,
-  `id_benefit` int(10) UNSIGNED NOT NULL,
+  `id_company` int(10) UNSIGNED NOT NULL,
   `id_level` int(10) UNSIGNED NOT NULL,
-  `id_address_work` int(10) UNSIGNED NOT NULL,
   `id_city` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `title` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `request` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `address_work` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `status_address` int(11) NOT NULL,
   `salary_from` double NOT NULL,
   `salary_to` double NOT NULL,
@@ -78,8 +72,21 @@ CREATE TABLE `article_company` (
   `experience` int(11) NOT NULL,
   `description_work` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `description_other` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `date_at` date DEFAULT NULL,
   `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `article_company`
+--
+
+INSERT INTO `article_company` (`id`, `id_fields_career`, `id_company`, `id_level`, `id_city`, `title`, `request`, `address_work`, `status_address`, `salary_from`, `salary_to`, `status_salary`, `date_accept_profile`, `gender`, `age_from`, `age_to`, `experience`, `description_work`, `description_other`, `date_at`, `status`) VALUES
+(1, 6, 1, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 20000000, 7000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', 1),
+(2, 6, 2, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 20000000, 7000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-02', 1),
+(3, 6, 3, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 20000000, 7000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', 1),
+(4, 6, 1, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 5000000, 7000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-11-01', 1),
+(5, 6, 3, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 5000000, 7000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-11-01', 1),
+(6, 6, 2, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 5000000, 7000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-25', 1);
 
 -- --------------------------------------------------------
 
@@ -90,10 +97,10 @@ CREATE TABLE `article_company` (
 CREATE TABLE `article_personally` (
   `id` int(10) UNSIGNED NOT NULL,
   `id_personally` int(10) UNSIGNED NOT NULL,
-  `id_expriences` int(10) UNSIGNED NOT NULL,
   `id_level` int(10) UNSIGNED NOT NULL,
   `id_city` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `id_district` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `experiences` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `title` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `salary_from` double NOT NULL,
   `salary_to` double NOT NULL,
@@ -125,6 +132,27 @@ CREATE TABLE `categories_career` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `categories_career`
+--
+
+INSERT INTO `categories_career` (`id`, `name`) VALUES
+(1, 'BÁN HÀNG / TIẾP THỊ'),
+(2, 'MÁY TÍNH / CÔNG NGHỆ THÔNG TIN'),
+(3, 'KỸ THUẬT'),
+(4, 'SẢN XUẤT'),
+(5, 'DỊCH VỤ'),
+(6, 'HÀNH CHÍNH / NHÂN SỰ'),
+(7, 'GIÁO DỤC / ĐÀO TẠO'),
+(8, 'XÂY DỰNG'),
+(9, 'KẾ TOÁN / TÀI CHÍNH'),
+(10, 'CHĂM SÓC SỨC KHỎE'),
+(11, 'TRUYỀN THÔNG / MEDIA'),
+(12, 'KHOA HỌC'),
+(13, 'KHÁCH SẠN / DU LỊCH'),
+(14, 'HÀNG TIÊU DÙNG'),
+(15, 'NHÓM NGÀNH KHÁC');
 
 -- --------------------------------------------------------
 
@@ -895,23 +923,6 @@ CREATE TABLE `education_personally` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `experiences_personally`
---
-
-CREATE TABLE `experiences_personally` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `id_worktype` int(10) UNSIGNED NOT NULL,
-  `id_position` int(10) UNSIGNED NOT NULL,
-  `company` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `date_from` date NOT NULL,
-  `date_to` date NOT NULL,
-  `date_now` date NOT NULL,
-  `description` text COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
 -- Cấu trúc bảng cho bảng `failed_jobs`
 --
 
@@ -937,6 +948,80 @@ CREATE TABLE `field_career` (
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Đang đổ dữ liệu cho bảng `field_career`
+--
+
+INSERT INTO `field_career` (`id`, `id_career`, `name`) VALUES
+(1, 1, 'Bán lẻ / Bán sỉ'),
+(2, 1, 'Tiếp thị trực tuyến'),
+(3, 1, 'Tiếp thị / Marketing'),
+(4, 1, 'Bán hàng / Kinh doanh'),
+(5, 2, 'CNTT - Phần cứng / Mạng'),
+(6, 2, 'CNTT - Phần mềm'),
+(7, 3, 'Cơ khí / Ô tô / Tự động hóa'),
+(8, 3, 'Điện / Điện tử / Điện lạnh'),
+(9, 3, 'Hóa học'),
+(10, 3, 'Môi trường'),
+(11, 3, 'Dầu khí'),
+(12, 3, 'Khoáng sản'),
+(13, 3, 'Bảo trì / Sửa chữa'),
+(14, 4, 'Thu mua / Vật tư'),
+(15, 4, 'Sản xuất / Vận hành sản xuất'),
+(16, 4, 'Xuất nhập khẩu'),
+(17, 4, 'Dệt may / Da giày / Thời trang'),
+(18, 4, 'In ấn / Xuất bản'),
+(19, 4, 'An toàn lao động'),
+(20, 4, 'Quản lý chất lượng (QA/QC)'),
+(21, 4, 'Đồ gỗ'),
+(22, 5, 'Phi chính phủ / Phi lợi nhuận'),
+(23, 5, 'Vận chuyển / Giao nhận / Kho vận'),
+(24, 5, 'Lao động phổ thông'),
+(25, 5, 'Dịch vụ khách hàng'),
+(26, 5, 'Tư vấn'),
+(27, 5, 'An Ninh / Bảo Vệ'),
+(28, 5, 'Bưu chính viễn thông'),
+(29, 5, 'Luật / Pháp lý'),
+(30, 6, 'Biên phiên dịch'),
+(31, 6, 'Hành chính / Thư ký'),
+(32, 6, 'Nhân sự'),
+(33, 6, 'Quản lý điều hành'),
+(34, 7, 'Thư viện'),
+(35, 7, 'Giáo dục / Đào tạo'),
+(36, 8, 'Nội ngoại thất'),
+(37, 8, 'Bất động sản'),
+(38, 8, 'Kiến trúc'),
+(39, 8, 'Xây dựng'),
+(40, 8, 'Bảo hiểm'),
+(41, 9, 'Chứng khoán'),
+(42, 9, 'Tài chính / Đầu tư'),
+(43, 9, 'Kế toán / Kiểm toán'),
+(44, 9, 'Ngân hàng'),
+(45, 10, 'Dược phẩm'),
+(46, 10, 'Y tế / Chăm sóc sức khỏe'),
+(47, 11, 'Quảng cáo / Đối ngoại / Truyền Thông'),
+(48, 11, 'Giải trí'),
+(49, 11, 'Mỹ thuật / Nghệ thuật / Thiết kế'),
+(50, 11, 'Truyền hình / Báo chí / Biên tập'),
+(51, 11, 'Tổ chức sự kiện'),
+(52, 12, 'Lâm Nghiệp'),
+(53, 12, 'Thủy sản / Hải sản'),
+(54, 12, 'Công nghệ thực phẩm / Dinh dưỡng'),
+(55, 12, 'Thống kê'),
+(56, 12, 'Nông nghiệp'),
+(57, 12, 'Hàng hải'),
+(58, 12, 'Công nghệ sinh học'),
+(59, 12, 'Trắc địa / Địa Chất'),
+(60, 12, 'Thủy lợi'),
+(61, 12, 'Chăn nuôi / Thú y'),
+(62, 13, 'Du lịch'),
+(63, 13, 'Nhà hàng / Khách sạn'),
+(64, 13, 'Hàng không'),
+(65, 14, 'Thực phẩm & Đồ uống'),
+(66, 14, 'Hàng gia dụng / Chăm sóc cá nhân'),
+(67, 15, 'Mới tốt nghiệp / Thực tập'),
+(68, 15, 'Ngành khác');
+
 -- --------------------------------------------------------
 
 --
@@ -960,7 +1045,7 @@ CREATE TABLE `histories_used` (
 CREATE TABLE `infor_company` (
   `id` int(10) UNSIGNED NOT NULL,
   `id_account` int(10) UNSIGNED NOT NULL,
-  `id_worktype` int(10) UNSIGNED NOT NULL,
+  `id_career` int(10) UNSIGNED NOT NULL,
   `amount_staff` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `website` text COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -973,6 +1058,15 @@ CREATE TABLE `infor_company` (
   `image_3` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `infor_company`
+--
+
+INSERT INTO `infor_company` (`id`, `id_account`, `id_career`, `amount_staff`, `name`, `website`, `taxid`, `logo`, `description`, `link_video`, `image_1`, `image_2`, `image_3`, `status`) VALUES
+(1, 1, 6, 1, 'Công ty cổ phần điện tử', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n            Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n            -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n            -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(2, 2, 6, 1, 'Công ty điện toán đám mây', '', '', 'images/Logo/brand3.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n            Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n            -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n            -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(3, 3, 6, 1, 'Công ty lập trình AI', '', '', 'images/Logo.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n            Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n            -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n            -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1);
 
 -- --------------------------------------------------------
 
@@ -1026,6 +1120,21 @@ CREATE TABLE `level_personally` (
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Đang đổ dữ liệu cho bảng `level_personally`
+--
+
+INSERT INTO `level_personally` (`id`, `name`) VALUES
+(1, 'Sinh viên / Thực tập sinh'),
+(2, 'Mới tốt nghiệp'),
+(3, 'Nhân viên'),
+(4, 'Trưởng nhóm / Giám sát'),
+(5, 'Quản lý'),
+(6, 'Giám đốc'),
+(7, 'Phó giám đốc'),
+(8, 'Tổng giám đốc'),
+(9, 'Chủ tịch / Phó chủ tịch');
+
 -- --------------------------------------------------------
 
 --
@@ -1069,7 +1178,19 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (111, '2022_12_06_153615_address_work', 14),
 (112, '2022_12_06_153913_categories_used', 15),
 (113, '2022_12_06_154013_categories_used', 16),
-(114, '2022_12_06_154347_article_company', 17);
+(114, '2022_12_06_154347_article_company', 17),
+(115, '2022_12_06_154013_histories_used', 18),
+(116, '2022_12_07_062922_field_career', 18),
+(117, '2022_12_07_063133_article_company', 18),
+(118, '2022_12_09_133849_infor_personally', 19),
+(119, '2022_12_09_134021_infor_company', 20),
+(120, '2022_12_09_134135_article_company', 21),
+(121, '2022_12_09_134253_article_personally', 22),
+(122, '2022_12_09_134719_article_personally', 23),
+(123, '2022_12_09_135127_article_company', 24),
+(124, '2022_12_09_140354_article_company', 25),
+(125, '2022_12_09_140527_article_company', 26),
+(126, '2022_12_09_142251_infor_company', 27);
 
 -- --------------------------------------------------------
 
@@ -1081,6 +1202,32 @@ CREATE TABLE `nationality` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `nationality`
+--
+
+INSERT INTO `nationality` (`id`, `name`) VALUES
+(1, 'Người Việt Nam'),
+(2, 'Người Bangladesh'),
+(3, 'Người Campuchia'),
+(4, 'Người Canada'),
+(5, 'Người Công gô'),
+(6, 'Người Hoa Kỳ'),
+(7, 'Người Hàn Quốc'),
+(8, 'Người Hồng Kong'),
+(9, 'Người Lào'),
+(10, 'Người Malaysia'),
+(11, 'Người Myanmar'),
+(12, 'Người Nhật'),
+(13, 'Người Qatar'),
+(14, 'Người Singapore'),
+(15, 'Người Trung Quốc'),
+(16, 'Người Ukraine'),
+(17, 'Người Nga'),
+(18, 'Người Úc'),
+(19, 'Người Đài Loan'),
+(20, 'Quốc tịch khác');
 
 -- --------------------------------------------------------
 
@@ -1217,6 +1364,15 @@ CREATE TABLE `roles` (
   `role` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Đang đổ dữ liệu cho bảng `roles`
+--
+
+INSERT INTO `roles` (`id`, `role`) VALUES
+(1, 'Admin'),
+(2, 'Personally'),
+(3, 'Company');
+
 -- --------------------------------------------------------
 
 --
@@ -1227,6 +1383,19 @@ CREATE TABLE `software_skill_personally` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `software_skill_personally`
+--
+
+INSERT INTO `software_skill_personally` (`id`, `name`) VALUES
+(1, 'Kỹ năng lắng nghe'),
+(2, 'Kỹ năng giao tiếp'),
+(3, 'Kỹ năng quản lý thời gian'),
+(4, 'Kỹ năng giải quyết vấn đề'),
+(5, 'Kỹ năng làm việc nhóm'),
+(6, 'Khả năng linh hoạt, thích nghi nhanh với thay đổi'),
+(7, 'Kỹ năng làm việc dưới áp lực');
 
 -- --------------------------------------------------------
 
@@ -11858,17 +12027,6 @@ INSERT INTO `town` (`xaid`, `name`, `type`, `maqh`) VALUES
 ('32245', 'Xã Tân Ân', 'Xã', '973'),
 ('32248', 'Xã Đất Mũi', 'Xã', '973');
 
--- --------------------------------------------------------
-
---
--- Cấu trúc bảng cho bảng `worktype_personally`
---
-
-CREATE TABLE `worktype_personally` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
 --
 -- Chỉ mục cho các bảng đã đổ
 --
@@ -11881,22 +12039,13 @@ ALTER TABLE `account`
   ADD KEY `account_id_roles_foreign` (`id_roles`);
 
 --
--- Chỉ mục cho bảng `address_work`
---
-ALTER TABLE `address_work`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `address_work_id_company_foreign` (`id_company`);
-
---
 -- Chỉ mục cho bảng `article_company`
 --
 ALTER TABLE `article_company`
   ADD PRIMARY KEY (`id`),
   ADD KEY `article_company_id_fields_career_foreign` (`id_fields_career`),
-  ADD KEY `article_company_id_worktype_foreign` (`id_worktype`),
-  ADD KEY `article_company_id_benefit_foreign` (`id_benefit`),
-  ADD KEY `article_company_id_level_foreign` (`id_level`),
-  ADD KEY `article_company_id_address_work_foreign` (`id_address_work`);
+  ADD KEY `article_company_id_company_foreign` (`id_company`),
+  ADD KEY `article_company_id_level_foreign` (`id_level`);
 
 --
 -- Chỉ mục cho bảng `article_personally`
@@ -11904,7 +12053,6 @@ ALTER TABLE `article_company`
 ALTER TABLE `article_personally`
   ADD PRIMARY KEY (`id`),
   ADD KEY `article_personally_id_personally_foreign` (`id_personally`),
-  ADD KEY `article_personally_id_expriences_foreign` (`id_expriences`),
   ADD KEY `article_personally_id_level_foreign` (`id_level`);
 
 --
@@ -11947,14 +12095,6 @@ ALTER TABLE `education_personally`
   ADD KEY `education_personally_id_personally_foreign` (`id_personally`);
 
 --
--- Chỉ mục cho bảng `experiences_personally`
---
-ALTER TABLE `experiences_personally`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `experiences_personally_id_worktype_foreign` (`id_worktype`),
-  ADD KEY `experiences_personally_id_position_foreign` (`id_position`);
-
---
 -- Chỉ mục cho bảng `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
@@ -11981,8 +12121,8 @@ ALTER TABLE `histories_used`
 --
 ALTER TABLE `infor_company`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `infor_company_id_account_foreign` (`id_account`),
-  ADD KEY `infor_company_id_worktype_foreign` (`id_worktype`);
+  ADD UNIQUE KEY `id_account` (`id_account`),
+  ADD KEY `infor_company_id_career_foreign` (`id_career`);
 
 --
 -- Chỉ mục cho bảng `infor_contact`
@@ -12064,12 +12204,6 @@ ALTER TABLE `town`
   ADD PRIMARY KEY (`xaid`);
 
 --
--- Chỉ mục cho bảng `worktype_personally`
---
-ALTER TABLE `worktype_personally`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
 
@@ -12077,19 +12211,13 @@ ALTER TABLE `worktype_personally`
 -- AUTO_INCREMENT cho bảng `account`
 --
 ALTER TABLE `account`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT cho bảng `address_work`
---
-ALTER TABLE `address_work`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT cho bảng `article_company`
 --
 ALTER TABLE `article_company`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT cho bảng `article_personally`
@@ -12107,7 +12235,7 @@ ALTER TABLE `benifit`
 -- AUTO_INCREMENT cho bảng `categories_career`
 --
 ALTER TABLE `categories_career`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT cho bảng `categories_used`
@@ -12128,12 +12256,6 @@ ALTER TABLE `education_personally`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `experiences_personally`
---
-ALTER TABLE `experiences_personally`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT cho bảng `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
@@ -12143,7 +12265,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT cho bảng `field_career`
 --
 ALTER TABLE `field_career`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
 
 --
 -- AUTO_INCREMENT cho bảng `histories_used`
@@ -12155,7 +12277,7 @@ ALTER TABLE `histories_used`
 -- AUTO_INCREMENT cho bảng `infor_company`
 --
 ALTER TABLE `infor_company`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT cho bảng `infor_contact`
@@ -12173,19 +12295,19 @@ ALTER TABLE `infor_personally`
 -- AUTO_INCREMENT cho bảng `level_personally`
 --
 ALTER TABLE `level_personally`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT cho bảng `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=115;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
 
 --
 -- AUTO_INCREMENT cho bảng `nationality`
 --
 ALTER TABLE `nationality`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT cho bảng `personal_access_tokens`
@@ -12203,19 +12325,13 @@ ALTER TABLE `position`
 -- AUTO_INCREMENT cho bảng `roles`
 --
 ALTER TABLE `roles`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT cho bảng `software_skill_personally`
 --
 ALTER TABLE `software_skill_personally`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT cho bảng `worktype_personally`
---
-ALTER TABLE `worktype_personally`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Các ràng buộc cho các bảng đã đổ
@@ -12228,26 +12344,17 @@ ALTER TABLE `account`
   ADD CONSTRAINT `account_id_roles_foreign` FOREIGN KEY (`id_roles`) REFERENCES `roles` (`id`) ON DELETE CASCADE;
 
 --
--- Các ràng buộc cho bảng `address_work`
---
-ALTER TABLE `address_work`
-  ADD CONSTRAINT `address_work_id_company_foreign` FOREIGN KEY (`id_company`) REFERENCES `infor_company` (`id`);
-
---
 -- Các ràng buộc cho bảng `article_company`
 --
 ALTER TABLE `article_company`
-  ADD CONSTRAINT `article_company_id_address_work_foreign` FOREIGN KEY (`id_address_work`) REFERENCES `address_work` (`id`),
-  ADD CONSTRAINT `article_company_id_benefit_foreign` FOREIGN KEY (`id_benefit`) REFERENCES `benifit` (`id`),
+  ADD CONSTRAINT `article_company_id_company_foreign` FOREIGN KEY (`id_company`) REFERENCES `infor_company` (`id`),
   ADD CONSTRAINT `article_company_id_fields_career_foreign` FOREIGN KEY (`id_fields_career`) REFERENCES `field_career` (`id`),
-  ADD CONSTRAINT `article_company_id_level_foreign` FOREIGN KEY (`id_level`) REFERENCES `level_personally` (`id`),
-  ADD CONSTRAINT `article_company_id_worktype_foreign` FOREIGN KEY (`id_worktype`) REFERENCES `worktype_personally` (`id`);
+  ADD CONSTRAINT `article_company_id_level_foreign` FOREIGN KEY (`id_level`) REFERENCES `level_personally` (`id`);
 
 --
 -- Các ràng buộc cho bảng `article_personally`
 --
 ALTER TABLE `article_personally`
-  ADD CONSTRAINT `article_personally_id_expriences_foreign` FOREIGN KEY (`id_expriences`) REFERENCES `experiences_personally` (`id`),
   ADD CONSTRAINT `article_personally_id_level_foreign` FOREIGN KEY (`id_level`) REFERENCES `level_personally` (`id`),
   ADD CONSTRAINT `article_personally_id_personally_foreign` FOREIGN KEY (`id_personally`) REFERENCES `infor_personally` (`id`);
 
@@ -12270,13 +12377,6 @@ ALTER TABLE `education_personally`
   ADD CONSTRAINT `education_personally_id_personally_foreign` FOREIGN KEY (`id_personally`) REFERENCES `infor_personally` (`id`);
 
 --
--- Các ràng buộc cho bảng `experiences_personally`
---
-ALTER TABLE `experiences_personally`
-  ADD CONSTRAINT `experiences_personally_id_position_foreign` FOREIGN KEY (`id_position`) REFERENCES `position` (`id`),
-  ADD CONSTRAINT `experiences_personally_id_worktype_foreign` FOREIGN KEY (`id_worktype`) REFERENCES `worktype_personally` (`id`);
-
---
 -- Các ràng buộc cho bảng `field_career`
 --
 ALTER TABLE `field_career`
@@ -12293,8 +12393,8 @@ ALTER TABLE `histories_used`
 -- Các ràng buộc cho bảng `infor_company`
 --
 ALTER TABLE `infor_company`
-  ADD CONSTRAINT `infor_company_id_account_foreign` FOREIGN KEY (`id_account`) REFERENCES `account` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `infor_company_id_worktype_foreign` FOREIGN KEY (`id_worktype`) REFERENCES `worktype_personally` (`id`);
+  ADD CONSTRAINT `infor_company_id_account_foreign` FOREIGN KEY (`id_account`) REFERENCES `account` (`id`),
+  ADD CONSTRAINT `infor_company_id_career_foreign` FOREIGN KEY (`id_career`) REFERENCES `categories_career` (`id`);
 
 --
 -- Các ràng buộc cho bảng `infor_contact`

@@ -2,6 +2,7 @@
 
 @section('css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ asset('css/User/Personally/Home.css') }}">
 @endsection
 
 @section("content")
@@ -84,7 +85,7 @@
         </button>
     </section>
 
-    <section>
+    <section class="home__epmloyer">
         <div class="title">
             <h1 class="title-why text-center h2 font-bold m-5"><b>Nhà tuyển dụng hàng đầu</b></h1>
         </div>
@@ -93,10 +94,10 @@
                 <ul class="d-flex nav-tabs">
                     <span class="nav-tabs__slider"></span>
                     <li class="nav-item nav-tab--item">
-                      <a class="nav-tabs__link h4" data='hot' href="{{ route("personally.posts_hot_employer") }}">Việc Làm Nổi Bật</a>
+                      <a class="nav-tabs__link h4" data='hot' href="{{ route("personally.home-post-hot") }}">Việc Làm Nổi Bật</a>
                     </li>
                     <li class="nav-item nav-tab--item">
-                      <a class="nav-tabs__link h4" data='vip' href="{{ route("personally.posts_vip_employer") }}">Việc Làm VIP ($1000+)</a>
+                      <a class="nav-tabs__link h4" data='vip' href="{{ route("personally.home-post-vip") }}">Việc Làm VIP ($1000+)</a>
                     </li>
                     <li class="nav-item nav-tab--item">
                       <a class="nav-tabs__link h4" data='more' href="#">Việc làm mới cập nhật</a>
@@ -104,7 +105,10 @@
                 </ul>
 
                 <div class="posts_employer">
-                    @yield("posts_employer")
+                    <div class="nav nav-items">
+                        @yield("posts_employer")
+                    </div>
+                    @yield("pagination")
                 </div>
             </div>
     </section>
@@ -148,7 +152,7 @@
 
     <section class="home_top-career">
         <div class="title">
-            <h1 class="text-center h2 font-bold m-5"><b><span class="title-why">Ngành nghề trọng điểm</span></b></h1>
+            <h1 class="title-why text-center h2 font-bold m-5"><b><span>Ngành nghề trọng điểm</span></b></h1>
         </div>
 
         <div class="home_top-career__content">
@@ -219,6 +223,87 @@
             </div>
         </div>
     </section>
+
+    <section>
+        <div class="d-flex justify-content-center align-items-center home__brands">
+            <div class="home__brands-title">
+                <img class="home__brands-title--image" src="{{ asset('images/decor3.4a5d109c.png') }}" alt="">
+                <div class="home__brands-title--content">
+                    <h1 class="h3">Gia tăng cơ hội nghề nghiệp</h1>
+                    <p class="h6">khi kết nối cùng các công ty hàng đầu tại <span>NQA</span> </p>
+                </div>
+            </div>
+
+            <div class="home__brands-item">
+                <div class="home__brand">
+                    <img src="{{ asset('images/brand1.jpg') }}" alt="">
+                </div>
+
+                <div class="home__brand">
+                    <img src="{{ asset('images/brand2.jpg') }}" alt="">
+                </div>
+
+                <div class="home__brand">
+                    <img src="{{ asset('images/brand3.jpg') }}" alt="">
+                </div>
+
+                <div class="home__brand">
+                    <img src="{{ asset('images/brand4.png') }}" alt="">
+                </div>
+
+                <div class="home__brand">
+                    <img src="{{ asset('images/brand5.png') }}" alt="">
+                </div>
+
+                <div class="home__brand">
+                    <img src="{{ asset('images/brand6.jpg') }}" alt="">
+                </div>
+
+                <div class="home__brand">
+                    <img src="{{ asset('images/brand7.png') }}" alt="">
+                </div>
+
+                <div class="home__brand">
+                    <img src="{{ asset('images/brand8.png') }}" alt="">
+                </div>
+
+                <div class="home__brand">
+                    <img src="{{ asset('images/brand1.jpg') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="home__about-us position-relative">
+
+            <div>
+                <img class="home__about-us--image" src="{{ asset('images/item7.b20ddf66.png') }}" alt="">
+                <img class="foot--image position-absolute" src="{{ asset('images/item8.eb68ec74.png') }}" alt="">
+            </div>
+
+            <div class="home__about-us__container">
+                <div class="home__about-us__top d-flex justify-content-between">
+                    <div class="home__about-us__content">
+                        <h1 class="title-why">Về chúng tôi</h1>
+                        <h1 class="h2">Sứ mệnh</h1>
+                        <p>Tạo cơ hội việc làm và phát triển cho mọi lực lượng lao động ở Việt Nam.</p>
+                        <h1 class="h2">Tầm nhìn</h1>
+                        <p>Trở thành mạng xã hội việc làm phổ thông lớn nhất tại Việt Nam tầm nhìn đến năm 2025</p>
+                        <p><b>Tinh thần trách nhiệm là phẩm chất cốt lõi:</b> Mỗi thành viên của NQA luôn đề cao trách nhiệm với khách hàng, với bản thân và với công ty.</p>
+                        <p><b>Công nghệ là nền tảng: </b>NQA ứng dụng công nghệ trong mọi hoạt động vận hành nội bộ cũng như quá trình bán dịch vụ nhằm tối ưu hiệu quả.</p>
+                        <p><b>Dịch vụ khách hàng với WOW SERVICE: </b>NQA mang đến những trải nghiệm WOW đối với khách hàng thông qua những dịch vụ vượt trội. Với nhà tuyển dụng,
+                                NQA cung cấp dịch vụ tư vấn chuyên nghiệp, tốc độ tìm kiếm nhân sự tối ưu, cam kết đầu ra đi kèm với chính sách bảo hành. Với ứng viên,
+                                NQA mang đến trải nghiệm tìm kiếm việc làm dễ dàng, nhanh chóng và uy tín</p>
+                    </div>
+
+                    <div>
+                        <img src="{{ asset('images/img-p1.16802923.jpg') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
 
 @section("js")
@@ -230,10 +315,12 @@
 
         let url = location.href.split('-');
 
+        url = url[1].split('?');
+
         tabs.forEach(e => {
             let data = e.getAttribute("data");
 
-            if(url[1] === data)
+            if(url[0] === data)
             {
                 currentSlider.style.left = e.offsetLeft + 'px';
                 currentSlider.style.width = e.offsetWidth + 'px';

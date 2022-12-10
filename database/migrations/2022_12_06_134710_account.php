@@ -23,7 +23,7 @@ return new class extends Migration
         //     $table->foreign("id_roles")->references("id")->on("roles")->onDelete('cascade');
         // });
 
-        Schema::enableForeignKeyConstraints();
+        // Schema::enableForeignKeyConstraints();
 
     }
 

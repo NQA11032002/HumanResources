@@ -13,10 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create("level_personally", function (Blueprint $table) {
-            $table->increments("id")->unsigned();
-            $table->string("name");
-        });
+        // Schema::create("level_personally", function (Blueprint $table) {
+        //     $table->increments("id")->unsigned();
+        //     $table->string("name");
+        // });
     }
 
     /**

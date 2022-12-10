@@ -16,13 +16,12 @@ return new class extends Migration
         Schema::create("article_company", function (Blueprint $table) {
             $table->increments("id")->unsigned();
             $table->integer("id_fields_career")->unsigned();
-            $table->integer("id_worktype")->unsigned();
-            $table->integer("id_benefit")->unsigned();
+            $table->integer("id_company")->unsigned();
             $table->integer("id_level")->unsigned();
-            $table->integer("id_address_work")->unsigned();
             $table->string("id_city");
             $table->text("title");
             $table->text("request");
+            $table->text("address_work");
             $table->integer("status_address");
             $table->double("salary_from");
             $table->double("salary_to");
@@ -37,11 +36,9 @@ return new class extends Migration
             $table->integer("status");
 
             $table->foreign("id_fields_career")->references("id")->on("field_career");
-            $table->foreign("id_worktype")->references("id")->on("worktype_personally");
-            $table->foreign("id_benefit")->references("id")->on("benifit");
-            $table->foreign("id_level")->references("id")->on("level_personally");
-            $table->foreign("id_address_work")->references("id")->on("address_work");
+            $table->foreign("id_company")->references("id")->on("infor_company");
 
+            $table->foreign("id_level")->references("id")->on("level_personally");
         });
     }
 
