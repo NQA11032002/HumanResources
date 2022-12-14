@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\User\Personally\address;
 use App\Models\User\Personally\article;
 use App\Models\User\Personally\interested;
+use Symfony\Component\HttpFoundation\Request;
+
 
 class PostController extends Controller
 {
@@ -18,11 +20,24 @@ class PostController extends Controller
         $this->amountPage = 10;
     }
 
-    public function getPosts()
+    public function getPosts(Request $request)
     {
+        $keywords = "";
+        $address = "";
+        
+        if(!empty($request->search_keywords))
+        {
+            $keywords = $request->search_keywords;
+        }
+        
+        if(!empty($request->search_address))
+        {
+            $address = $request->search_address;
+        }
+        
+        $posts = $this->model->getWorks($this->amountPage, null,$keywords, $address);
         $typeWorks = $this->model->getTypeWork();
         $careers = $this->model->getCareer();
-        $posts = $this->model->getWorks($this->amountPage);
         $interests = $this->changeInterestsToArray(2);
         $cities = $this->getCities();
 

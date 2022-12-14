@@ -28,6 +28,7 @@
 
 
     @include('User/Personally/Blocks/Footer')
+    
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script>
@@ -40,6 +41,7 @@
 
         url[3] === '' ? paginations[0].classList.add('active') : null;
     </script>
+
     @yield("js")
 </body>
 

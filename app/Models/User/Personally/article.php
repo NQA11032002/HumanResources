@@ -10,7 +10,7 @@ class article extends Model
 {
     use HasFactory;
 
-    public function getWorks($amountPage, $typeWork = null)
+    public function getWorks($amountPage, $typeWork = null, $keywords = null, $address = null)
     {
         if (!empty($typeWork)) {
             if ($typeWork == "vip") {
@@ -33,7 +33,7 @@ class article extends Model
                     ->join("article_company as art", 'itr.id_article', '=', 'art.id')
                     ->join("infor_company as cp", 'art.id_company', '=', 'cp.id')
                     ->select('itr.id_article', 'cp.logo', 'cp.name', 'art.title', 'art.created_at', 'art.updated_at', 'art.id', 'art.address_work', 'art.salary_from', 'art.salary_to')
-                    ->where('art.status', 1)
+                    ->where('art.status' , 1)
                     ->groupBy('itr.id_article', 'cp.logo', 'cp.name', 'art.created_at', 'art.updated_at', 'art.title', 'art.id', 'art.address_work', 'art.salary_from', 'art.salary_to')
                     ->having(DB::raw("count(id_article)"), '>=', 3)
                     ->paginate($amountPage);
@@ -41,8 +41,19 @@ class article extends Model
         } else {
             $result = DB::table("article_company as art")
                 ->join('infor_company as cp', 'art.id_company', '=', 'cp.id')
-                ->select('art.id', 'cp.logo', 'cp.name', 'art.title', 'art.created_at', 'art.updated_at', 'art.address_work', 'art.salary_from', 'art.salary_to')
-                ->paginate($amountPage);
+                ->select('art.id', 'cp.logo', 'cp.name', 'art.title', 'art.created_at', 'art.updated_at', 'art.address_work', 'art.salary_from', 'art.salary_to');
+                
+                if(!empty($keywords))
+                {
+                    $result = $result->where('art.title', 'like', '%'. $keywords. '%');
+                }
+
+                if(!empty($address) && $address != 0)
+                {
+                    $result = $result->where('art.id_city', $address);
+                }
+
+            $result = $result->paginate($amountPage);
         }
 
         return $result;
