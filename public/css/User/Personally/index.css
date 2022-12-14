@@ -13,6 +13,7 @@ html,body{
     --color-stripes: #e8e8e8;
     --color-pagination: #5d677a;
     --color-footer: #181818;
+    --color-red: #ff0000;
 }
 
 a
@@ -24,8 +25,16 @@ header
 {
     background: var(--color-header);
     box-shadow: 0 2px 1px rgb(57 63 72 / 10%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
 }
-
+main
+{
+    margin-top: 65px;
+}
 /* ------------------------------------------------------------- Header -------------------------------------------------------------*/
 
 .logo
@@ -94,6 +103,10 @@ header
     border: unset !important;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
+.nav-link.active
+{
+    color: var(--color-main);
+}
 /* ------------------------------------------------------------- Footer -------------------------------------------------------------*/
 .footer__nav--logo
 {
@@ -153,5 +166,54 @@ header
 
     opacity: 80%;
 }
+.icon-interested
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 20px;
+    cursor: grab;
+    transition: all 0.25s linear;
+    color: var(--color-content);
 
+}
+.icon-interested:hover
+{
+    color: var(--color-main);
+}
 
+.icon-interested--save
+{
+    color: var(--color-main);
+}
+.container-input--form
+{
+    position: relative;
+}
+
+.form-label,.container-input--form-icon
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 13px;
+    font-size: 15px !important;
+    color: #999;
+    transition: all 0.25s linear;
+}
+.container-input--form-icon
+{
+    right: 10px;
+}
+.input-form:focus
+{
+    border-color: var(--color-main) !important;
+    box-shadow: none;
+}
+
+.input-form:not(:placeholder-shown)+.form-label,
+.input-form:focus+.form-label {
+    top: 0;
+    color: var(--color-main);
+    background: var(--color-header);
+}

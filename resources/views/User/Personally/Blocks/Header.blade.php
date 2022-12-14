@@ -2,18 +2,19 @@
     <ul class="nav justify-content-between align-items-center nav_pagination">
         <ul class="nav justify-content-between pagination align-items-center">
             <li>
-                <a href="" >
-                    <img class="logo" src="{{ asset("images/logo.png") }}" alt="">
+                <a href="">
+                    <img class="logo" src="{{ asset('images/logo.png') }}" alt="">
                 </a>
             </li>
         </ul>
 
         <ul class="nav justify-content-between pagination align-items-center">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{{ route("personally.home-post-hot") }}">Trang chủ</a>
+                <a class="nav-link active" data-page='home' aria-current="page"
+                    href="{{ route('home-post-hot') }}">Trang chủ</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Tìm việc làm</a>
+                <a class="nav-link" data-page='posts' href="{{ route('post.posts') }}">Tìm việc làm</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Tính lương</a>
@@ -47,5 +48,5 @@
                 </a>
             </li>
         </ul>
-      </ul>
+    </ul>
 </header>

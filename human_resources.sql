@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 10, 2022 lúc 07:25 AM
+-- Thời gian đã tạo: Th12 14, 2022 lúc 06:35 AM
 -- Phiên bản máy phục vụ: 10.4.24-MariaDB
 -- Phiên bản PHP: 8.1.6
 
@@ -44,7 +44,203 @@ CREATE TABLE `account` (
 INSERT INTO `account` (`id`, `id_roles`, `email`, `passwords`, `status`, `created_at`, `updated_at`) VALUES
 (1, 1, 'quocem@gmail.com', '10', 1, NULL, NULL),
 (2, 2, 'quocem1@gmail.com', '30', 1, NULL, NULL),
-(3, 1, 'quocem2@gmail.com', '18', 1, NULL, NULL);
+(3, 1, 'quocem2@gmail.com', '18', 1, NULL, NULL),
+(10, 1, 'quocem4@gmail.com', '32', 1, NULL, NULL),
+(11, 1, 'quocem5@gmail.com', '34', 1, NULL, NULL),
+(12, 1, 'quocem6@gmail.com', '6', 1, NULL, NULL),
+(13, 1, 'quocem7@gmail.com', '40', 1, NULL, NULL),
+(14, 1, 'quocem8@gmail.com', '34', 1, NULL, NULL),
+(15, 1, 'quocem9@gmail.com', '46', 1, NULL, NULL),
+(16, 1, 'quocem10@gmail.com', '25', 1, NULL, NULL),
+(17, 1, 'quocem11@gmail.com', '8', 1, NULL, NULL),
+(18, 1, 'quocem12@gmail.com', '22', 1, NULL, NULL),
+(19, 1, 'quocem13@gmail.com', '23', 1, NULL, NULL),
+(20, 1, 'quocem14@gmail.com', '27', 1, NULL, NULL),
+(21, 1, 'quocem15@gmail.com', '19', 1, NULL, NULL),
+(22, 1, 'quocem16@gmail.com', '4', 1, NULL, NULL),
+(23, 1, 'quocem17@gmail.com', '48', 1, NULL, NULL),
+(24, 1, 'quocem18@gmail.com', '16', 1, NULL, NULL),
+(25, 1, 'quocem19@gmail.com', '36', 1, NULL, NULL),
+(26, 1, 'quocem20@gmail.com', '28', 1, NULL, NULL),
+(27, 1, 'quocem21@gmail.com', '26', 1, NULL, NULL),
+(28, 1, 'quocem22@gmail.com', '40', 1, NULL, NULL),
+(29, 1, 'quocem23@gmail.com', '26', 1, NULL, NULL),
+(30, 1, 'quocem24@gmail.com', '10', 1, NULL, NULL),
+(31, 1, 'quocem25@gmail.com', '21', 1, NULL, NULL),
+(32, 1, 'quocem26@gmail.com', '15', 1, NULL, NULL),
+(33, 1, 'quocem27@gmail.com', '2', 1, NULL, NULL),
+(34, 1, 'quocem28@gmail.com', '34', 1, NULL, NULL),
+(35, 1, 'quocem29@gmail.com', '26', 1, NULL, NULL),
+(36, 1, 'quocem30@gmail.com', '38', 1, NULL, NULL),
+(37, 1, 'quocem31@gmail.com', '6', 1, NULL, NULL),
+(38, 1, 'quocem32@gmail.com', '37', 1, NULL, NULL),
+(39, 1, 'quocem33@gmail.com', '47', 1, NULL, NULL),
+(40, 1, 'quocem34@gmail.com', '46', 1, NULL, NULL),
+(41, 1, 'quocem35@gmail.com', '44', 1, NULL, NULL),
+(42, 1, 'quocem36@gmail.com', '34', 1, NULL, NULL),
+(43, 1, 'quocem37@gmail.com', '23', 1, NULL, NULL),
+(44, 1, 'quocem38@gmail.com', '1', 1, NULL, NULL),
+(45, 1, 'quocem39@gmail.com', '6', 1, NULL, NULL),
+(46, 1, 'quocem40@gmail.com', '18', 1, NULL, NULL),
+(47, 1, 'quocem41@gmail.com', '29', 1, NULL, NULL),
+(48, 1, 'quocem42@gmail.com', '6', 1, NULL, NULL),
+(49, 1, 'quocem43@gmail.com', '17', 1, NULL, NULL),
+(50, 1, 'quocem44@gmail.com', '44', 1, NULL, NULL),
+(51, 1, 'quocem45@gmail.com', '33', 1, NULL, NULL),
+(52, 1, 'quocem46@gmail.com', '30', 1, NULL, NULL),
+(53, 1, 'quocem47@gmail.com', '32', 1, NULL, NULL),
+(54, 1, 'quocem48@gmail.com', '50', 1, NULL, NULL),
+(55, 1, 'quocem49@gmail.com', '47', 1, NULL, NULL),
+(56, 1, 'quocem50@gmail.com', '25', 1, NULL, NULL),
+(57, 1, 'quocem51@gmail.com', '37', 1, NULL, NULL),
+(58, 1, 'quocem52@gmail.com', '1', 1, NULL, NULL),
+(59, 1, 'quocem53@gmail.com', '23', 1, NULL, NULL),
+(60, 1, 'quocem54@gmail.com', '27', 1, NULL, NULL),
+(61, 1, 'quocem55@gmail.com', '27', 1, NULL, NULL),
+(62, 1, 'quocem56@gmail.com', '42', 1, NULL, NULL),
+(63, 1, 'quocem57@gmail.com', '16', 1, NULL, NULL),
+(64, 1, 'quocem58@gmail.com', '3', 1, NULL, NULL),
+(65, 1, 'quocem59@gmail.com', '46', 1, NULL, NULL),
+(66, 1, 'quocem60@gmail.com', '32', 1, NULL, NULL),
+(67, 1, 'quocem61@gmail.com', '43', 1, NULL, NULL),
+(68, 1, 'quocem62@gmail.com', '25', 1, NULL, NULL),
+(69, 1, 'quocem63@gmail.com', '35', 1, NULL, NULL),
+(70, 1, 'quocem64@gmail.com', '41', 1, NULL, NULL),
+(71, 1, 'quocem65@gmail.com', '2', 1, NULL, NULL),
+(72, 1, 'quocem66@gmail.com', '24', 1, NULL, NULL),
+(73, 1, 'quocem67@gmail.com', '8', 1, NULL, NULL),
+(74, 1, 'quocem68@gmail.com', '42', 1, NULL, NULL),
+(75, 1, 'quocem69@gmail.com', '29', 1, NULL, NULL),
+(76, 1, 'quocem70@gmail.com', '33', 1, NULL, NULL),
+(77, 1, 'quocem71@gmail.com', '11', 1, NULL, NULL),
+(78, 1, 'quocem72@gmail.com', '21', 1, NULL, NULL),
+(79, 1, 'quocem73@gmail.com', '15', 1, NULL, NULL),
+(80, 1, 'quocem74@gmail.com', '42', 1, NULL, NULL),
+(81, 1, 'quocem75@gmail.com', '13', 1, NULL, NULL),
+(82, 1, 'quocem76@gmail.com', '5', 1, NULL, NULL),
+(83, 1, 'quocem77@gmail.com', '28', 1, NULL, NULL),
+(84, 1, 'quocem78@gmail.com', '2', 1, NULL, NULL),
+(85, 1, 'quocem79@gmail.com', '16', 1, NULL, NULL),
+(86, 1, 'quocem80@gmail.com', '29', 1, NULL, NULL),
+(87, 1, 'quocem81@gmail.com', '4', 1, NULL, NULL),
+(88, 1, 'quocem82@gmail.com', '34', 1, NULL, NULL),
+(89, 1, 'quocem83@gmail.com', '31', 1, NULL, NULL),
+(90, 1, 'quocem84@gmail.com', '25', 1, NULL, NULL),
+(91, 1, 'quocem85@gmail.com', '4', 1, NULL, NULL),
+(92, 1, 'quocem86@gmail.com', '20', 1, NULL, NULL),
+(93, 1, 'quocem87@gmail.com', '1', 1, NULL, NULL),
+(94, 1, 'quocem88@gmail.com', '35', 1, NULL, NULL),
+(95, 1, 'quocem89@gmail.com', '43', 1, NULL, NULL),
+(96, 1, 'quocem90@gmail.com', '23', 1, NULL, NULL),
+(97, 1, 'quocem91@gmail.com', '23', 1, NULL, NULL),
+(98, 1, 'quocem92@gmail.com', '48', 1, NULL, NULL),
+(99, 1, 'quocem93@gmail.com', '33', 1, NULL, NULL),
+(100, 1, 'quocem94@gmail.com', '18', 1, NULL, NULL),
+(101, 1, 'quocem95@gmail.com', '1', 1, NULL, NULL),
+(102, 1, 'quocem96@gmail.com', '36', 1, NULL, NULL),
+(103, 1, 'quocem97@gmail.com', '34', 1, NULL, NULL),
+(104, 1, 'quocem98@gmail.com', '35', 1, NULL, NULL),
+(105, 1, 'quocem99@gmail.com', '30', 1, NULL, NULL),
+(106, 2, 'quocem100@gmail.com', '15', 1, NULL, NULL),
+(107, 2, 'quocem101@gmail.com', '31', 1, NULL, NULL),
+(108, 2, 'quocem102@gmail.com', '27', 1, NULL, NULL),
+(109, 2, 'quocem103@gmail.com', '20', 1, NULL, NULL),
+(110, 2, 'quocem104@gmail.com', '15', 1, NULL, NULL),
+(111, 2, 'quocem105@gmail.com', '26', 1, NULL, NULL),
+(112, 2, 'quocem106@gmail.com', '48', 1, NULL, NULL),
+(113, 2, 'quocem107@gmail.com', '19', 1, NULL, NULL),
+(114, 2, 'quocem108@gmail.com', '27', 1, NULL, NULL),
+(115, 2, 'quocem109@gmail.com', '35', 1, NULL, NULL),
+(116, 2, 'quocem110@gmail.com', '13', 1, NULL, NULL),
+(117, 2, 'quocem111@gmail.com', '34', 1, NULL, NULL),
+(118, 2, 'quocem112@gmail.com', '26', 1, NULL, NULL),
+(119, 2, 'quocem113@gmail.com', '39', 1, NULL, NULL),
+(120, 2, 'quocem114@gmail.com', '21', 1, NULL, NULL),
+(121, 2, 'quocem115@gmail.com', '4', 1, NULL, NULL),
+(122, 2, 'quocem116@gmail.com', '11', 1, NULL, NULL),
+(123, 2, 'quocem117@gmail.com', '34', 1, NULL, NULL),
+(124, 2, 'quocem118@gmail.com', '12', 1, NULL, NULL),
+(125, 2, 'quocem119@gmail.com', '35', 1, NULL, NULL),
+(126, 2, 'quocem120@gmail.com', '13', 1, NULL, NULL),
+(127, 2, 'quocem121@gmail.com', '11', 1, NULL, NULL),
+(128, 2, 'quocem122@gmail.com', '39', 1, NULL, NULL),
+(129, 2, 'quocem123@gmail.com', '32', 1, NULL, NULL),
+(130, 2, 'quocem124@gmail.com', '50', 1, NULL, NULL),
+(131, 2, 'quocem125@gmail.com', '24', 1, NULL, NULL),
+(132, 2, 'quocem126@gmail.com', '41', 1, NULL, NULL),
+(133, 2, 'quocem127@gmail.com', '4', 1, NULL, NULL),
+(134, 2, 'quocem128@gmail.com', '23', 1, NULL, NULL),
+(135, 2, 'quocem129@gmail.com', '38', 1, NULL, NULL),
+(136, 2, 'quocem130@gmail.com', '46', 1, NULL, NULL),
+(137, 2, 'quocem131@gmail.com', '17', 1, NULL, NULL),
+(138, 2, 'quocem132@gmail.com', '14', 1, NULL, NULL),
+(139, 2, 'quocem133@gmail.com', '27', 1, NULL, NULL),
+(140, 2, 'quocem134@gmail.com', '6', 1, NULL, NULL),
+(141, 2, 'quocem135@gmail.com', '38', 1, NULL, NULL),
+(142, 2, 'quocem136@gmail.com', '39', 1, NULL, NULL),
+(143, 2, 'quocem137@gmail.com', '37', 1, NULL, NULL),
+(144, 2, 'quocem138@gmail.com', '42', 1, NULL, NULL),
+(145, 2, 'quocem139@gmail.com', '19', 1, NULL, NULL),
+(146, 2, 'quocem140@gmail.com', '28', 1, NULL, NULL),
+(147, 2, 'quocem141@gmail.com', '4', 1, NULL, NULL),
+(148, 2, 'quocem142@gmail.com', '36', 1, NULL, NULL),
+(149, 2, 'quocem143@gmail.com', '2', 1, NULL, NULL),
+(150, 2, 'quocem144@gmail.com', '49', 1, NULL, NULL),
+(151, 2, 'quocem145@gmail.com', '32', 1, NULL, NULL),
+(152, 2, 'quocem146@gmail.com', '37', 1, NULL, NULL),
+(153, 2, 'quocem147@gmail.com', '41', 1, NULL, NULL),
+(154, 2, 'quocem148@gmail.com', '39', 1, NULL, NULL),
+(155, 2, 'quocem149@gmail.com', '42', 1, NULL, NULL),
+(156, 2, 'quocem150@gmail.com', '29', 1, NULL, NULL),
+(157, 2, 'quocem151@gmail.com', '15', 1, NULL, NULL),
+(158, 2, 'quocem152@gmail.com', '45', 1, NULL, NULL),
+(159, 2, 'quocem153@gmail.com', '10', 1, NULL, NULL),
+(160, 2, 'quocem154@gmail.com', '49', 1, NULL, NULL),
+(161, 2, 'quocem155@gmail.com', '18', 1, NULL, NULL),
+(162, 2, 'quocem156@gmail.com', '35', 1, NULL, NULL),
+(163, 2, 'quocem157@gmail.com', '24', 1, NULL, NULL),
+(164, 2, 'quocem158@gmail.com', '38', 1, NULL, NULL),
+(165, 2, 'quocem159@gmail.com', '12', 1, NULL, NULL),
+(166, 2, 'quocem160@gmail.com', '32', 1, NULL, NULL),
+(167, 2, 'quocem161@gmail.com', '11', 1, NULL, NULL),
+(168, 2, 'quocem162@gmail.com', '17', 1, NULL, NULL),
+(169, 2, 'quocem163@gmail.com', '4', 1, NULL, NULL),
+(170, 2, 'quocem164@gmail.com', '7', 1, NULL, NULL),
+(171, 2, 'quocem165@gmail.com', '17', 1, NULL, NULL),
+(172, 2, 'quocem166@gmail.com', '7', 1, NULL, NULL),
+(173, 2, 'quocem167@gmail.com', '40', 1, NULL, NULL),
+(174, 2, 'quocem168@gmail.com', '7', 1, NULL, NULL),
+(175, 2, 'quocem169@gmail.com', '15', 1, NULL, NULL),
+(176, 2, 'quocem170@gmail.com', '3', 1, NULL, NULL),
+(177, 2, 'quocem171@gmail.com', '48', 1, NULL, NULL),
+(178, 2, 'quocem172@gmail.com', '39', 1, NULL, NULL),
+(179, 2, 'quocem173@gmail.com', '18', 1, NULL, NULL),
+(180, 2, 'quocem174@gmail.com', '40', 1, NULL, NULL),
+(181, 2, 'quocem175@gmail.com', '45', 1, NULL, NULL),
+(182, 2, 'quocem176@gmail.com', '10', 1, NULL, NULL),
+(183, 2, 'quocem177@gmail.com', '25', 1, NULL, NULL),
+(184, 2, 'quocem178@gmail.com', '8', 1, NULL, NULL),
+(185, 2, 'quocem179@gmail.com', '7', 1, NULL, NULL),
+(186, 2, 'quocem180@gmail.com', '2', 1, NULL, NULL),
+(187, 2, 'quocem181@gmail.com', '27', 1, NULL, NULL),
+(188, 2, 'quocem182@gmail.com', '8', 1, NULL, NULL),
+(189, 2, 'quocem183@gmail.com', '23', 1, NULL, NULL),
+(190, 2, 'quocem184@gmail.com', '43', 1, NULL, NULL),
+(191, 2, 'quocem185@gmail.com', '50', 1, NULL, NULL),
+(192, 2, 'quocem186@gmail.com', '34', 1, NULL, NULL),
+(193, 2, 'quocem187@gmail.com', '34', 1, NULL, NULL),
+(194, 2, 'quocem188@gmail.com', '49', 1, NULL, NULL),
+(195, 2, 'quocem189@gmail.com', '19', 1, NULL, NULL),
+(196, 2, 'quocem190@gmail.com', '26', 1, NULL, NULL),
+(197, 2, 'quocem191@gmail.com', '33', 1, NULL, NULL),
+(198, 2, 'quocem192@gmail.com', '16', 1, NULL, NULL),
+(199, 2, 'quocem193@gmail.com', '41', 1, NULL, NULL),
+(200, 2, 'quocem194@gmail.com', '25', 1, NULL, NULL),
+(201, 2, 'quocem195@gmail.com', '42', 1, NULL, NULL),
+(202, 2, 'quocem196@gmail.com', '25', 1, NULL, NULL),
+(203, 2, 'quocem197@gmail.com', '22', 1, NULL, NULL),
+(204, 2, 'quocem198@gmail.com', '7', 1, NULL, NULL),
+(205, 2, 'quocem199@gmail.com', '30', 1, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -54,8 +250,10 @@ INSERT INTO `account` (`id`, `id_roles`, `email`, `passwords`, `status`, `create
 
 CREATE TABLE `article_company` (
   `id` int(10) UNSIGNED NOT NULL,
+  `id_career` int(11) NOT NULL,
   `id_fields_career` int(10) UNSIGNED NOT NULL,
   `id_company` int(10) UNSIGNED NOT NULL,
+  `id_typework` int(11) NOT NULL,
   `id_level` int(10) UNSIGNED NOT NULL,
   `id_city` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `title` text COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -72,7 +270,8 @@ CREATE TABLE `article_company` (
   `experience` int(11) NOT NULL,
   `description_work` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `description_other` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `date_at` date DEFAULT NULL,
+  `created_at` date DEFAULT NULL,
+  `updated_at` date DEFAULT NULL,
   `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -80,13 +279,119 @@ CREATE TABLE `article_company` (
 -- Đang đổ dữ liệu cho bảng `article_company`
 --
 
-INSERT INTO `article_company` (`id`, `id_fields_career`, `id_company`, `id_level`, `id_city`, `title`, `request`, `address_work`, `status_address`, `salary_from`, `salary_to`, `status_salary`, `date_accept_profile`, `gender`, `age_from`, `age_to`, `experience`, `description_work`, `description_other`, `date_at`, `status`) VALUES
-(1, 6, 1, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 20000000, 7000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', 1),
-(2, 6, 2, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 20000000, 7000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-02', 1),
-(3, 6, 3, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 20000000, 7000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', 1),
-(4, 6, 1, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 5000000, 7000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-11-01', 1),
-(5, 6, 3, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 5000000, 7000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-11-01', 1),
-(6, 6, 2, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 5000000, 7000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-25', 1);
+INSERT INTO `article_company` (`id`, `id_career`, `id_fields_career`, `id_company`, `id_typework`, `id_level`, `id_city`, `title`, `request`, `address_work`, `status_address`, `salary_from`, `salary_to`, `status_salary`, `date_accept_profile`, `gender`, `age_from`, `age_to`, `experience`, `description_work`, `description_other`, `created_at`, `updated_at`, `status`) VALUES
+(1, 1, 6, 1, 1, 1, '01', 'Tuyển lập trình viên C#', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 4000000, 8000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(2, 2, 6, 2, 2, 1, '01', 'Tuyển lập trình viên C++', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 17000000, 25000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(3, 3, 6, 3, 3, 1, '01', 'Tuyển lập trình viên Laravel', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 18000000, 23000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(4, 4, 6, 1, 4, 1, '01', 'Tuyển lập trình viên ', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 7000000, 14000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(5, 5, 6, 3, 5, 1, '01', 'Tuyển lập trình viên Java', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 6000000, 16000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(6, 6, 6, 2, 3, 1, '01', 'Tuyển lập trình viên App', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 15000000, 35000000, 1, '2022-12-09', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(7, 7, 23, 6, 4, 3, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 35079782, 51727613, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(8, 8, 6, 2, 2, 4, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 5456688, 7507529, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(9, 9, 2, 3, 1, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 39137626, 19418751, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(11, 10, 24, 1, 5, 5, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 47084045, 11518880, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(12, 11, 15, 2, 2, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 19953618, 65097057, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(13, 12, 13, 3, 3, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 30167470, 42342759, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(15, 13, 4, 1, 1, 9, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 49138327, 53495406, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(16, 14, 12, 2, 3, 8, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 28458753, 27855552, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(17, 15, 9, 3, 4, 3, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 6441131, 47157672, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(19, 1, 5, 1, 5, 8, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 32146808, 57185036, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(20, 2, 22, 2, 2, 5, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 23555240, 1566077, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(21, 3, 17, 3, 1, 7, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 7032607, 20642870, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(24, 4, 1, 6, 3, 6, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 44153054, 17189102, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(25, 5, 24, 7, 4, 2, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 28130217, 15157197, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(26, 6, 17, 8, 2, 4, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 40566347, 5107667, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(27, 7, 8, 9, 3, 2, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 1503435, 48676232, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(28, 8, 23, 10, 5, 7, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 22771608, 16523146, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(29, 9, 1, 11, 1, 4, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 30964233, 25886589, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(30, 10, 22, 12, 4, 5, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 35307505, 67771404, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(31, 11, 19, 13, 0, 6, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 13929124, 10767259, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(32, 12, 22, 14, 0, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 7095338, 51086893, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(33, 13, 3, 15, 0, 4, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 26185458, 34833456, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(34, 14, 21, 16, 0, 3, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 44911160, 24695210, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(35, 15, 13, 17, 0, 3, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 11876459, 62980492, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(36, 5, 11, 18, 0, 3, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 8985363, 30115913, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(37, 2, 3, 19, 0, 2, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 25607420, 54376099, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(38, 3, 8, 20, 0, 2, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 25708174, 47628167, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(39, 1, 5, 21, 0, 5, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 41500519, 40359066, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(40, 4, 3, 22, 0, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 47748513, 64124907, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(41, 5, 24, 23, 0, 4, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 25539283, 56591993, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(42, 6, 3, 24, 0, 9, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 46114413, 15832697, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(43, 7, 20, 25, 0, 9, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 46004105, 1122560, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(44, 8, 23, 26, 0, 8, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 2113236, 46625200, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(45, 0, 10, 27, 0, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 49451013, 15621915, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(46, 0, 2, 28, 0, 5, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 20603075, 57448566, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(47, 9, 5, 29, 0, 2, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 31297728, 69987816, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(48, 0, 17, 30, 0, 3, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 15892571, 37616734, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(49, 0, 24, 31, 0, 3, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 42214989, 53304732, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(50, 0, 3, 32, 0, 8, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 22246257, 66824541, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(51, 0, 18, 33, 0, 6, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 34811402, 53168688, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(52, 0, 21, 34, 0, 9, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 2941068, 41059128, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(53, 0, 24, 35, 0, 4, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 1618411, 58253568, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(54, 0, 23, 36, 0, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 46719509, 39614289, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(55, 0, 11, 37, 0, 7, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 49865108, 11134588, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(56, 0, 19, 38, 0, 9, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 27539647, 11548187, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(57, 0, 10, 39, 0, 5, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 15308993, 39246213, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(58, 0, 11, 40, 0, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 48012065, 14975087, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(59, 0, 19, 41, 0, 8, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 31771544, 23505843, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(60, 0, 1, 42, 0, 4, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 41756592, 14950401, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(61, 0, 5, 43, 0, 7, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 12333883, 63183110, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(62, 0, 5, 44, 0, 3, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 5638474, 13124095, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(63, 0, 16, 45, 0, 6, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 9796947, 42814883, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(64, 0, 12, 46, 0, 4, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 42958328, 28817299, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(65, 0, 12, 47, 0, 8, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 44100166, 41949510, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(66, 0, 4, 48, 0, 5, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 37929075, 35055223, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(67, 0, 16, 49, 0, 2, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 18458507, 31578009, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(68, 0, 2, 50, 0, 2, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 38890570, 56811706, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(69, 0, 17, 51, 0, 5, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 17334601, 17392664, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(70, 0, 10, 52, 0, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 45767774, 60207421, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(71, 0, 11, 53, 0, 2, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 41871475, 21149021, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(72, 0, 20, 54, 0, 5, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 39877037, 56130077, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(73, 0, 1, 55, 0, 6, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 16717272, 66250521, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(74, 0, 20, 56, 0, 5, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 33498845, 61209229, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(75, 0, 18, 57, 0, 5, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 23572653, 40664095, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(76, 0, 4, 58, 0, 2, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 4120016, 4206123, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(77, 0, 12, 59, 0, 6, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 26642084, 14042684, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(78, 0, 10, 60, 0, 2, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 2021217, 46173983, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(79, 0, 2, 61, 0, 6, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 16260187, 58495404, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(80, 0, 5, 62, 0, 9, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 20503187, 51750653, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(81, 0, 9, 63, 0, 7, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 35619284, 17753841, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(82, 0, 12, 64, 0, 8, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 22563900, 36465430, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(83, 0, 16, 65, 0, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 32556688, 33282735, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(84, 0, 15, 66, 0, 5, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 27510231, 15830000, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(85, 0, 8, 67, 0, 7, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 3377831, 25894458, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(86, 0, 5, 68, 0, 8, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 43765137, 19321740, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(87, 0, 1, 69, 0, 6, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 1384797, 66866802, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(88, 0, 15, 70, 0, 8, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 44432847, 42409129, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(89, 0, 19, 71, 0, 4, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 7542003, 47823126, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(90, 0, 16, 72, 0, 7, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 13903401, 49291784, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(91, 0, 12, 73, 0, 6, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 14283174, 44561505, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(92, 0, 1, 74, 0, 5, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 12918191, 50578716, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(93, 0, 22, 75, 0, 7, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 43612886, 38375379, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(94, 0, 5, 76, 0, 5, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 18177384, 26104353, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(95, 0, 18, 77, 0, 4, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 31873215, 27484384, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(96, 0, 10, 78, 0, 2, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 9418289, 48474964, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(97, 0, 5, 79, 0, 9, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 45354478, 17629513, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(98, 0, 20, 80, 0, 8, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 10770357, 10778611, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(99, 0, 7, 81, 0, 5, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 9368102, 5384549, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(100, 0, 10, 82, 0, 7, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 18108071, 18282568, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(101, 0, 16, 83, 0, 2, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 18827981, 4947889, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(102, 0, 2, 84, 0, 9, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 4518723, 58326103, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(103, 0, 9, 85, 0, 6, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 2358186, 2140034, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(104, 0, 20, 86, 0, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 20219245, 8222249, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(105, 0, 3, 87, 0, 9, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 41795911, 58453086, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(106, 0, 23, 88, 0, 2, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 43988369, 25715030, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(107, 0, 7, 89, 0, 5, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 5000041, 45513076, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(108, 0, 2, 90, 0, 4, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 25821012, 45915229, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(109, 0, 16, 91, 0, 4, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 16745844, 57341265, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(110, 0, 6, 92, 0, 4, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 19882089, 65585312, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(111, 0, 24, 93, 0, 7, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 7041504, 6120343, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(112, 0, 19, 94, 0, 1, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 30591168, 42084955, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(113, 0, 16, 95, 0, 7, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 34114127, 32392199, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(114, 0, 6, 96, 0, 6, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 35043441, 41304009, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(115, 0, 2, 97, 0, 7, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 34697240, 5441153, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(116, 0, 1, 98, 0, 9, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 13662228, 48920442, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1),
+(117, 0, 22, 99, 0, 6, '01', 'Tuyển lập trình viên PHP', 'Yêu cầu thành thạo PHP cơ bản', '93/5 sông cầu', 1, 32519144, 38733752, 1, '2022-12-10', 1, 18, 22, 2, 'Làm dự án thực tạo website', '', '2022-12-01', NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -1065,8 +1370,108 @@ CREATE TABLE `infor_company` (
 
 INSERT INTO `infor_company` (`id`, `id_account`, `id_career`, `amount_staff`, `name`, `website`, `taxid`, `logo`, `description`, `link_video`, `image_1`, `image_2`, `image_3`, `status`) VALUES
 (1, 1, 6, 1, 'Công ty cổ phần điện tử', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n            Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n            -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n            -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
-(2, 2, 6, 1, 'Công ty điện toán đám mây', '', '', 'images/Logo/brand3.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n            Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n            -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n            -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
-(3, 3, 6, 1, 'Công ty lập trình AI', '', '', 'images/Logo.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n            Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n            -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n            -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1);
+(2, 2, 6, 1, 'Công ty điện toán đám mây', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n            Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n            -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n            -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(3, 3, 6, 1, 'Công ty lập trình AI', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n            Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n            -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n            -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(6, 106, 15, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(7, 107, 4, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(8, 108, 10, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(9, 109, 12, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(10, 110, 9, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(11, 111, 13, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(12, 112, 3, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(13, 113, 6, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(14, 114, 5, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(15, 115, 3, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(16, 116, 11, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(17, 117, 2, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(18, 118, 13, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(19, 119, 8, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(20, 120, 14, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(21, 121, 10, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(22, 122, 3, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(23, 123, 11, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(24, 124, 12, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(25, 125, 12, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(26, 126, 2, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(27, 127, 1, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(28, 128, 3, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(29, 129, 14, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(30, 130, 15, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(31, 131, 9, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(32, 132, 5, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(33, 133, 10, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(34, 134, 14, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(35, 135, 11, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(36, 136, 8, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(37, 137, 4, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(38, 138, 14, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(39, 139, 12, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(40, 140, 1, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(41, 141, 11, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(42, 142, 11, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(43, 143, 14, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(44, 144, 14, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(45, 145, 7, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(46, 146, 8, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(47, 147, 13, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(48, 148, 13, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(49, 149, 8, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(50, 150, 12, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(51, 151, 15, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(52, 152, 4, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(53, 153, 5, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(54, 154, 7, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(55, 155, 3, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(56, 156, 7, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(57, 157, 6, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(58, 158, 15, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(59, 159, 7, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(60, 160, 8, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(61, 161, 15, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(62, 162, 13, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(63, 163, 6, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(64, 164, 9, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(65, 165, 11, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(66, 166, 8, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(67, 167, 15, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(68, 168, 15, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(69, 169, 10, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(70, 170, 11, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(71, 171, 2, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(72, 172, 11, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(73, 173, 6, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(74, 174, 6, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1);
+INSERT INTO `infor_company` (`id`, `id_account`, `id_career`, `amount_staff`, `name`, `website`, `taxid`, `logo`, `description`, `link_video`, `image_1`, `image_2`, `image_3`, `status`) VALUES
+(75, 175, 3, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(76, 176, 13, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(77, 177, 8, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(78, 178, 12, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(79, 179, 4, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(80, 180, 2, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(81, 181, 14, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(82, 182, 8, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(83, 183, 9, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(84, 184, 15, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(85, 185, 14, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(86, 186, 7, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(87, 187, 8, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(88, 188, 10, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(89, 189, 7, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(90, 190, 7, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(91, 191, 8, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(92, 192, 11, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(93, 193, 6, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(94, 194, 10, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(95, 195, 11, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(96, 196, 1, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(97, 197, 2, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(98, 198, 14, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(99, 199, 3, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(100, 200, 2, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(101, 201, 15, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(102, 202, 1, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(103, 203, 10, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1),
+(104, 204, 12, 1, 'Quoc em', '', '', 'images/Logo/brand6.jpg', 'Công ty TNHH Nissho Electronics Việt Nam (Nissho Việt Nam) là công ty con của Nissho Electronics Corporation – thành viên chuyên về công nghệ thông tin của Tập đoàn Sojitz (top 5 tập đoàn thương mại đầu tư lớn nhất Nhật Bản).\n                Nissho Việt Nam thành lập từ tháng 8 năm 2011 tập trung vào các mảng sau:\n                -    Phát triển phần mềm (outsource web/app) cho các tập đoàn lớn của Nhật Bản\n                -    Nghiên cứu và ứng dụng các công nghệ mới (AI, AWS, Microsoft Azure,…) để cung cấp các sản phẩm (product) và dịch vụ (service) cho thị trường Việt Nam, Nhật Bản, Âu Mỹ,.. ', '', '', '', '', 1);
 
 -- --------------------------------------------------------
 
@@ -1190,7 +1595,9 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (123, '2022_12_09_135127_article_company', 24),
 (124, '2022_12_09_140354_article_company', 25),
 (125, '2022_12_09_140527_article_company', 26),
-(126, '2022_12_09_142251_infor_company', 27);
+(126, '2022_12_09_142251_infor_company', 27),
+(127, '2022_12_10_134020_personally_interested', 28),
+(128, '2022_12_10_141923_personally_interested', 29);
 
 -- --------------------------------------------------------
 
@@ -1240,6 +1647,197 @@ CREATE TABLE `password_resets` (
   `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `personally_interested`
+--
+
+CREATE TABLE `personally_interested` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `id_account` int(10) UNSIGNED NOT NULL,
+  `id_article` int(10) UNSIGNED NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `personally_interested`
+--
+
+INSERT INTO `personally_interested` (`id`, `id_account`, `id_article`, `created_at`, `updated_at`) VALUES
+(1, 1, 78, NULL, NULL),
+(2, 2, 27, NULL, NULL),
+(5, 2, 74, NULL, NULL),
+(9, 2, 96, NULL, NULL),
+(11, 12, 52, NULL, NULL),
+(12, 13, 41, NULL, NULL),
+(13, 14, 49, NULL, NULL),
+(14, 2, 7, NULL, NULL),
+(15, 16, 35, NULL, NULL),
+(16, 17, 21, NULL, NULL),
+(17, 18, 73, NULL, NULL),
+(18, 19, 85, NULL, NULL),
+(19, 20, 44, NULL, NULL),
+(20, 21, 78, NULL, NULL),
+(21, 22, 24, NULL, NULL),
+(22, 23, 44, NULL, NULL),
+(23, 24, 11, NULL, NULL),
+(24, 25, 90, NULL, NULL),
+(25, 26, 96, NULL, NULL),
+(26, 27, 56, NULL, NULL),
+(27, 28, 55, NULL, NULL),
+(28, 29, 94, NULL, NULL),
+(29, 30, 72, NULL, NULL),
+(30, 31, 80, NULL, NULL),
+(31, 32, 54, NULL, NULL),
+(32, 33, 9, NULL, NULL),
+(33, 34, 74, NULL, NULL),
+(34, 35, 25, NULL, NULL),
+(36, 10, 25, NULL, NULL),
+(37, 11, 100, NULL, NULL),
+(38, 12, 93, NULL, NULL),
+(39, 13, 97, NULL, NULL),
+(40, 14, 25, NULL, NULL),
+(41, 15, 25, NULL, NULL),
+(42, 16, 86, NULL, NULL),
+(43, 17, 33, NULL, NULL),
+(44, 18, 72, NULL, NULL),
+(45, 19, 69, NULL, NULL),
+(46, 20, 95, NULL, NULL),
+(47, 21, 33, NULL, NULL),
+(48, 22, 59, NULL, NULL),
+(49, 23, 62, NULL, NULL),
+(50, 24, 75, NULL, NULL),
+(51, 25, 40, NULL, NULL),
+(52, 26, 59, NULL, NULL),
+(53, 27, 36, NULL, NULL),
+(54, 28, 32, NULL, NULL),
+(55, 29, 34, NULL, NULL),
+(56, 30, 40, NULL, NULL),
+(57, 31, 25, NULL, NULL),
+(58, 32, 43, NULL, NULL),
+(59, 33, 65, NULL, NULL),
+(60, 34, 61, NULL, NULL),
+(61, 35, 47, NULL, NULL),
+(62, 36, 85, NULL, NULL),
+(63, 37, 60, NULL, NULL),
+(64, 38, 30, NULL, NULL),
+(65, 39, 94, NULL, NULL),
+(66, 40, 80, NULL, NULL),
+(67, 41, 62, NULL, NULL),
+(68, 42, 75, NULL, NULL),
+(69, 43, 91, NULL, NULL),
+(70, 44, 92, NULL, NULL),
+(71, 45, 71, NULL, NULL),
+(72, 46, 35, NULL, NULL),
+(73, 47, 73, NULL, NULL),
+(74, 48, 26, NULL, NULL),
+(75, 49, 70, NULL, NULL),
+(76, 50, 41, NULL, NULL),
+(78, 10, 38, NULL, NULL),
+(79, 11, 95, NULL, NULL),
+(80, 12, 72, NULL, NULL),
+(81, 13, 35, NULL, NULL),
+(82, 14, 99, NULL, NULL),
+(83, 15, 24, NULL, NULL),
+(84, 16, 63, NULL, NULL),
+(85, 17, 91, NULL, NULL),
+(86, 18, 32, NULL, NULL),
+(87, 19, 71, NULL, NULL),
+(88, 20, 48, NULL, NULL),
+(89, 21, 35, NULL, NULL),
+(90, 22, 91, NULL, NULL),
+(91, 23, 100, NULL, NULL),
+(92, 24, 45, NULL, NULL),
+(93, 25, 58, NULL, NULL),
+(94, 26, 80, NULL, NULL),
+(95, 27, 67, NULL, NULL),
+(96, 28, 54, NULL, NULL),
+(97, 29, 71, NULL, NULL),
+(98, 30, 100, NULL, NULL),
+(99, 31, 28, NULL, NULL),
+(100, 32, 97, NULL, NULL),
+(101, 33, 75, NULL, NULL),
+(102, 34, 71, NULL, NULL),
+(103, 35, 95, NULL, NULL),
+(104, 36, 90, NULL, NULL),
+(105, 37, 39, NULL, NULL),
+(106, 38, 32, NULL, NULL),
+(107, 39, 77, NULL, NULL),
+(108, 40, 83, NULL, NULL),
+(109, 41, 36, NULL, NULL),
+(110, 42, 79, NULL, NULL),
+(111, 43, 95, NULL, NULL),
+(112, 44, 99, NULL, NULL),
+(113, 45, 50, NULL, NULL),
+(114, 46, 76, NULL, NULL),
+(115, 47, 69, NULL, NULL),
+(116, 48, 51, NULL, NULL),
+(117, 49, 76, NULL, NULL),
+(118, 50, 40, NULL, NULL),
+(119, 51, 30, NULL, NULL),
+(120, 52, 94, NULL, NULL),
+(121, 53, 77, NULL, NULL),
+(122, 54, 86, NULL, NULL),
+(123, 55, 72, NULL, NULL),
+(124, 56, 62, NULL, NULL),
+(125, 57, 51, NULL, NULL),
+(126, 58, 51, NULL, NULL),
+(127, 59, 89, NULL, NULL),
+(128, 60, 92, NULL, NULL),
+(129, 61, 25, NULL, NULL),
+(130, 62, 43, NULL, NULL),
+(131, 63, 24, NULL, NULL),
+(132, 64, 29, NULL, NULL),
+(133, 65, 47, NULL, NULL),
+(134, 66, 65, NULL, NULL),
+(135, 67, 86, NULL, NULL),
+(136, 68, 30, NULL, NULL),
+(137, 69, 45, NULL, NULL),
+(138, 70, 98, NULL, NULL),
+(139, 71, 80, NULL, NULL),
+(140, 72, 44, NULL, NULL),
+(141, 73, 62, NULL, NULL),
+(142, 74, 32, NULL, NULL),
+(143, 75, 55, NULL, NULL),
+(144, 76, 48, NULL, NULL),
+(145, 77, 43, NULL, NULL),
+(146, 78, 73, NULL, NULL),
+(147, 79, 96, NULL, NULL),
+(148, 80, 53, NULL, NULL),
+(149, 81, 71, NULL, NULL),
+(150, 82, 38, NULL, NULL),
+(151, 83, 64, NULL, NULL),
+(152, 84, 36, NULL, NULL),
+(153, 85, 90, NULL, NULL),
+(154, 86, 52, NULL, NULL),
+(155, 87, 39, NULL, NULL),
+(156, 88, 63, NULL, NULL),
+(157, 89, 88, NULL, NULL),
+(158, 90, 34, NULL, NULL),
+(159, 91, 94, NULL, NULL),
+(160, 92, 58, NULL, NULL),
+(161, 93, 44, NULL, NULL),
+(162, 94, 45, NULL, NULL),
+(163, 95, 68, NULL, NULL),
+(164, 96, 44, NULL, NULL),
+(165, 97, 81, NULL, NULL),
+(166, 98, 77, NULL, NULL),
+(167, 99, 51, NULL, NULL),
+(244, 2, 72, NULL, NULL),
+(256, 2, 71, NULL, NULL),
+(294, 2, 1, NULL, NULL),
+(295, 2, 2, NULL, NULL),
+(309, 2, 32, NULL, NULL),
+(310, 2, 30, NULL, NULL),
+(311, 2, 25, NULL, NULL),
+(312, 2, 35, NULL, NULL),
+(313, 2, 3, NULL, NULL),
+(314, 2, 5, NULL, NULL),
+(316, 2, 9, NULL, NULL),
+(317, 2, 6, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -12027,6 +12625,28 @@ INSERT INTO `town` (`xaid`, `name`, `type`, `maqh`) VALUES
 ('32245', 'Xã Tân Ân', 'Xã', '973'),
 ('32248', 'Xã Đất Mũi', 'Xã', '973');
 
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `type_work`
+--
+
+CREATE TABLE `type_work` (
+  `id` int(11) NOT NULL,
+  `name` varchar(250) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `type_work`
+--
+
+INSERT INTO `type_work` (`id`, `name`) VALUES
+(1, 'Thực tập'),
+(2, 'Việc làm part time'),
+(3, 'Việc làm  full time'),
+(4, 'Việc làm  freelance'),
+(5, 'Việc làm  remote');
+
 --
 -- Chỉ mục cho các bảng đã đổ
 --
@@ -12036,6 +12656,7 @@ INSERT INTO `town` (`xaid`, `name`, `type`, `maqh`) VALUES
 --
 ALTER TABLE `account`
   ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`),
   ADD KEY `account_id_roles_foreign` (`id_roles`);
 
 --
@@ -12166,6 +12787,14 @@ ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`);
 
 --
+-- Chỉ mục cho bảng `personally_interested`
+--
+ALTER TABLE `personally_interested`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `personally_interested_id_account_foreign` (`id_account`),
+  ADD KEY `personally_interested_id_article_foreign` (`id_article`);
+
+--
 -- Chỉ mục cho bảng `personal_access_tokens`
 --
 ALTER TABLE `personal_access_tokens`
@@ -12204,6 +12833,12 @@ ALTER TABLE `town`
   ADD PRIMARY KEY (`xaid`);
 
 --
+-- Chỉ mục cho bảng `type_work`
+--
+ALTER TABLE `type_work`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
 
@@ -12211,13 +12846,13 @@ ALTER TABLE `town`
 -- AUTO_INCREMENT cho bảng `account`
 --
 ALTER TABLE `account`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=206;
 
 --
 -- AUTO_INCREMENT cho bảng `article_company`
 --
 ALTER TABLE `article_company`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=118;
 
 --
 -- AUTO_INCREMENT cho bảng `article_personally`
@@ -12277,7 +12912,7 @@ ALTER TABLE `histories_used`
 -- AUTO_INCREMENT cho bảng `infor_company`
 --
 ALTER TABLE `infor_company`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
 
 --
 -- AUTO_INCREMENT cho bảng `infor_contact`
@@ -12301,13 +12936,19 @@ ALTER TABLE `level_personally`
 -- AUTO_INCREMENT cho bảng `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=127;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=129;
 
 --
 -- AUTO_INCREMENT cho bảng `nationality`
 --
 ALTER TABLE `nationality`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
+-- AUTO_INCREMENT cho bảng `personally_interested`
+--
+ALTER TABLE `personally_interested`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=318;
 
 --
 -- AUTO_INCREMENT cho bảng `personal_access_tokens`
@@ -12332,6 +12973,12 @@ ALTER TABLE `roles`
 --
 ALTER TABLE `software_skill_personally`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT cho bảng `type_work`
+--
+ALTER TABLE `type_work`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Các ràng buộc cho các bảng đã đổ
@@ -12410,6 +13057,13 @@ ALTER TABLE `infor_personally`
   ADD CONSTRAINT `infor_personally_id_account_foreign` FOREIGN KEY (`id_account`) REFERENCES `account` (`id`) ON DELETE CASCADE,
   ADD CONSTRAINT `infor_personally_id_nationality_foreign` FOREIGN KEY (`id_nationality`) REFERENCES `nationality` (`id`),
   ADD CONSTRAINT `infor_personally_id_software_skill_foreign` FOREIGN KEY (`id_software_skill`) REFERENCES `software_skill_personally` (`id`);
+
+--
+-- Các ràng buộc cho bảng `personally_interested`
+--
+ALTER TABLE `personally_interested`
+  ADD CONSTRAINT `personally_interested_id_account_foreign` FOREIGN KEY (`id_account`) REFERENCES `account` (`id`),
+  ADD CONSTRAINT `personally_interested_id_article_foreign` FOREIGN KEY (`id_article`) REFERENCES `article_company` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

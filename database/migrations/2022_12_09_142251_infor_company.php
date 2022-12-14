@@ -32,7 +32,8 @@ return new class extends Migration
 
             $table->foreign("id_account")->references("id")->on("account");
             $table->foreign("id_career")->references("id")->on("categories_career");
-        });    }
+        });
+    }
 
     /**
      * Reverse the migrations.

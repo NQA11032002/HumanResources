@@ -5,9 +5,9 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Nette\Utils\Random;
 
-class account extends Seeder
+
+class personally_interested extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,10 +16,14 @@ class account extends Seeder
      */
     public function run()
     {
-        for ($i = 100; $i < 200; $i++)
+        for ($i = 10; $i < 100; $i++)
         {
-            DB::table("account")->insert([
-                ["id_roles" => 2, "email" => "quocem".$i."@gmail.com", "passwords" => rand(1, 50),"status" => 1],
+            DB::table("personally_interested")->insert([
+                ["id_account" => $i,
+                "id_article" => random_int(24,100),
+                "create_at" => date('Y-m-d'),
+
+                ],
             ]);
         }
     }
