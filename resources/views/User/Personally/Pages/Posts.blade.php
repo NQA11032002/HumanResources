@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="search__city w-100">
-                    <select class="form-select col" name="search_address" aria-label="Default select example">
+                    <select class="form-select selected-address col" name="search_address" aria-label="Default select example">
                         <option value="0" selected>Tất cả địa điểm</option>
 
                         @foreach ($cities as $city)
@@ -147,47 +147,16 @@
                 </div>
 
                 <div class="posts-items">
-                    @if ($posts)
-                        @foreach ($posts as $post)
-                            <a href="" class="nav-item d-flex nav-item__post position-relative posts-item">
-                                <div href="" class="nav-item__image post-item--image">
-                                    <img src="{{ asset($post->logo) }}" alt="">
-                                </div>
+                    {{--  @if ($posts)
 
-                                <div class="nav-item__content d-flex justify-content-between position-relative">
-                                    <div class="nav-item__content--left">
-                                        <p href="#" class="h4">{{ $post->title }}</p>
-                                        <p href="#" class="h6">{{ $post->name }}</p>
-                                        <p class="salary"><i class="fa-solid fa-dollar-sign"></i> Lương: <span
-                                                class="salary-content">{{ number_format($post->salary_from, 0, ',', '.') }}đ
-                                                -
-                                                {{ number_format($post->salary_to, 0, ',', '.') }}đ</span> </p>
-                                        <p class="address"><i class="fa-solid fa-location-dot"></i>
-                                            {{ $post->address_work }}
-                                        </p>
-                                        <p class="date-at"><i class="fa-solid fa-clock"></i> Đăng ngày
-                                            {{ date('m-d-Y', strtotime($post->created_at)) }}
-                                            . Cập nhật ngày {{ date('m-d-Y', strtotime($post->updated_at)) }}
-                                        </p>
-                                    </div>
-                                </div>
 
-                                @if (in_array($post->id, $interests))
-                                    <i class="fa-solid fa-bookmark icon-interested icon-interested--save post-item--save top-0"
-                                        data-id={{ $post->id }}></i>
-                                @else
-                                    <i class="fa-solid fa-bookmark icon-interested icon-interested--unsave post-item--save top-0"
-                                        data-id={{ $post->id }}></i>
-                                @endif
-                                @csrf
-                                @method('DELETE')
-                            </a>
-                        @endforeach
+                    @endif  --}}
+                    @csrf
+                    @method('DELETE')
 
-                        <div class="pagination posts-pagination">
-                            {{ $posts->links() }}
-                        </div>
-                    @endif
+
+                    <div class="pagination posts-pagination">
+                    </div>
                 </div>
             </div>
         </div>
@@ -196,4 +165,6 @@
 
 @section('js')
     <script src="{{ asset('js/User/Personally/interested.js') }}"></script>
+    <script src="{{ asset('js/User/Personally/post.js') }}"></script>
+
 @endsection

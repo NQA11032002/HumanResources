@@ -26,4 +26,5 @@ Route::prefix("")->name("home.")->group(function () {
 
 Route::prefix("posts")->name("post.")->group(function () {
     Route::get("/", [PostController::class, "getPosts"])->name("posts");
+    Route::get("/createPost", [PostController::class, "createPost"])->name("createPost");
 });

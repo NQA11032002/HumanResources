@@ -172,7 +172,6 @@
     top: 10px !important;
     right: 10px;
 }
-.posts-pagination
-{
+nav{
     grid-column: 1/3;
 }
