@@ -20,11 +20,12 @@ Route::get("/", [HomeController::class, "getHome"])->name("home-post-hot");
 Route::prefix("")->name("home.")->group(function () {
     Route::get("/post-vip", [HomeController::class, "getPostVipEmployer"])->name("home-post-vip");
     Route::get("/post-new", [HomeController::class, "getPostNewEmployer"])->name("home-post-new");
-    Route::post("/post-saved", [HomeController::class, "postSaved"])->name("post-saved");
-    Route::delete("/post-unsaved", [HomeController::class, "postUnsaved"])->name("post-unsaved");
+
 });
 
 Route::prefix("posts")->name("post.")->group(function () {
     Route::get("/", [PostController::class, "getPosts"])->name("posts");
     Route::get("/createPost", [PostController::class, "createPost"])->name("createPost");
+    Route::post("/post-saved", [PostController::class, "postSaved"])->name("post-saved");
+    Route::delete("/post-unsaved", [PostController::class, "postUnsaved"])->name("post-unsaved");
 });

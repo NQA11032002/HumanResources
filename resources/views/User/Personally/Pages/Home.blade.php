@@ -3,75 +3,27 @@
 @section('css')
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
 <link rel="stylesheet" href="{{ asset('css/User/Personally/home.css') }}">
+<link rel="stylesheet" href="{{ asset('css/User/Personally/posts.css') }}">
 @endsection
 
 @section('content')
 <section id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
-            class="active btn-slider__banner" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" class="btn-slider__banner"
-            aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" class="btn-slider__banner"
-            aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" class="btn-slider__banner"
-            aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active btn-slider__banner" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" class="btn-slider__banner" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" class="btn-slider__banner" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" class="btn-slider__banner" aria-label="Slide 4"></button>
     </div>
 
     <div class="col-1 search-quickly">
         <div class="search-quickly__content">
-            <h3 class="h4">Đón lấy thành công với</h3>
-            <h5 class="h6">23,166 cơ hội nghề nghiệp</h5>
-            <form>
-                <div class="mb-3 container-input--form">
-                    <i class="fa-solid fa-magnifying-glass position-absolute container-input--form-icon"></i>
-                    <input type="text" class="form-control input-form" id="quickly-name" aria-describedby="emailHelp"
-                        placeholder=" ">
-                    <label for="quickly-name" class="form-label">Tên công ty, tiêu đề</label>
-                </div>
-
-                <div class="container-select--form">
-                    <select class="form-select col" aria-label="Default select example">
-                        <option selected>Tất cả địa điểm</option>
-
-                        @foreach ($cities as $city)
-                        <option value={{ $city->matp }}>{{ $city->name }}</option>
-                        @endforeach
-                    </select>
-                    <select class="form-select col" aria-label="Default select example">
-                        <option selected>Tất ngành nghề</option>
-
-                        @foreach ($careers as $career)
-                        <option value={{ $career->id }}>{{ $career->name }}</option>
-                        @endforeach
-                    </select>
-
-                    <select class="form-select col" aria-label="Default select example">
-                        <option selected>Chọn mức lương</option>
-                        <option value="3000000">Từ 3.000.000 đ</option>
-                        <option value="5000000">Từ 5.000.000 đ</option>
-                        <option value="70000000">Từ 7.000.000 đ</option>
-                        <option value="10000000">Từ 10.000.000 đ</option>
-                        <option value="15000000">Từ 15.000.000 đ</option>
-                        <option value="20000000">Từ 20.000.000 đ</option>
-                        <option value="30000000">Từ 30.000.000 đ</option>
-                        <option value="40000000">Từ 40.000.000 đ</option>
-                        <option value="50000000">Từ 50.000.000 đ</option>
-                        <option value="60000000">Từ 60.000.000 đ</option>
-                    </select>
-                    <select class="form-select col" aria-label="Default select example">
-                        <option selected>Cấp bậc</option>
-
-                        @foreach ($levels as $level)
-                        <option value={{ $level->id }}>{{ $level->name }}</option>
-                        @endforeach
-                    </select>
-                </div>
-                <p class="search-quickly__reset"><i class="fa-solid fa-rotate-left "></i> Reset</p>
-
-                <input type="submit" class="btn btn-success btn-search--quickly" value="Tìm việc ngay">
-                <a href="" class="btn btn-warning pagination-register--profile">Đăng ngay</a>
-            </form>
+            <img class="search-quickly__content--image" src="{{ asset('images/icon.svg') }}" alt="">
+            <div class="message">
+                <p class="h5">Bạn đang tìm kiếm cơ hội phát triển bản thân ?</p>
+                <p class="content">Hãy đến với chúng tôi, những cơ hội việc làm đang chờ bạn</p>
+                <a class="find_work" href="{{ route('post.posts') }}">Tìm việc ngay</a>
+                <a class="update_profile" href="#">Cập nhật hồ sơ</a>
+            </div>
         </div>
     </div>
 
@@ -91,13 +43,11 @@
             <img src="{{ asset('images/banner4.jpg') }}" class="d-block w-100 banner-personally" alt="...">
         </div>
     </div>
-    <button class="carousel-control-prev arrow" type="button" data-bs-target="#carouselExampleDark"
-        data-bs-slide="prev">
+    <button class="carousel-control-prev arrow" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next arrow" type="button" data-bs-target="#carouselExampleDark"
-        data-bs-slide="next">
+    <button class="carousel-control-next arrow" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
@@ -338,23 +288,23 @@
 @section('js')
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="{{ asset('js/User/Personally/home.js') }}"></script>
-<script src="{{ asset('js/User/Personally/interested.js') }}"></script>
 <script>
     const tabs = document.querySelectorAll('.nav-tabs__link');
-        const currentSlider = document.querySelector('.nav-tabs__slider');
+    const currentSlider = document.querySelector('.nav-tabs__slider');
 
-        let url = location.href.split('-');
+    let urlCurrent = location.href.split('-');
 
-        let temp = url[1].split('?');
+    let temp = urlCurrent[1].split('?');
 
-        tabs.forEach(e => {
-            let data = e.getAttribute("data");
+    tabs.forEach(e => {
+        let data = e.getAttribute("data");
 
-            if (temp[0] === data || url[1] == data) {
-                e.style.color = 'var(--color-main)';
-                currentSlider.style.left = e.offsetLeft + 'px';
-                currentSlider.style.width = e.offsetWidth + 'px';
-            }
-        });
+        if (temp[0] === data || urlCurrent[1] == data) {
+            e.style.color = 'var(--color-main)';
+            currentSlider.style.left = e.offsetLeft + 'px';
+            currentSlider.style.width = e.offsetWidth + 'px';
+        }
+    });
+
 </script>
 @endsection

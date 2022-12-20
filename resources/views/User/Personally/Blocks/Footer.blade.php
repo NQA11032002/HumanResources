@@ -1,6 +1,6 @@
 
 <Footer class="footer position-relative">
-    <div class="footer__nav d-flex justify-content-center align-items-center">
+    <div class="footer__nav">
         <ul>
             <li><img class="footer__nav--logo" src="{{ asset('images/logo.png') }}" alt=""></li>
             <li>
@@ -28,9 +28,11 @@
             <li>
                 <a href="#">Xem việc làm</a>
             </li>
-
             <li>
                 <a href="#">Tính lương</a>
+            </li>
+            <li>
+                <a href="#">Dịch vụ</a>
             </li>
         </ul>
 
@@ -39,13 +41,16 @@
                 <p class="h4">Nhà tuyển dụng</p>
             </li>
             <li>
-                <a href="#">Đăng hồ sơ</a>
+                <a href="#">Đăng tuyển dụng</a>
             </li>
             <li>
                 <a href="#">Xem hồ sơ</a>
             </li>
             <li>
                 <a href="#">Quản lý bài đăng</a>
+            </li>
+            <li>
+                <a href="#">Dịch vụ</a>
             </li>
         </ul>
 

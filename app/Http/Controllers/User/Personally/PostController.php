@@ -6,6 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Models\User\Personally\address;
 use App\Models\User\Personally\article;
 use App\Models\User\Personally\interested;
+use App\Models\User\Personally\career;
+
 use Symfony\Component\HttpFoundation\Request;
 
 
@@ -13,11 +15,13 @@ class PostController extends Controller
 {
     private $model;
     private $amountPage;
+    private $page;
 
     public function __construct()
     {
         $this->model = new article();
         $this->amountPage = 10;
+        $this->page = 0;
     }
 
     public function getPosts(Request $request)
@@ -25,18 +29,31 @@ class PostController extends Controller
         $typeWorks = $this->model->getTypeWork();
         $careers = $this->model->getCareer();
         $cities = $this->getCities();
+        $fieldCareers = $this->getFieldCareer();
 
-        return view("User.Personally.Pages.Posts", compact('typeWorks', 'careers', 'cities'));
+        return view("User.Personally.Pages.Posts", compact('typeWorks', 'careers', 'fieldCareers' ,'cities'));
     }
 
     public function createPost(Request $request)
     {
         $keywords = "";
         $address = "";
+        $sort_date = 0;
+        $sort_salary = 0;
+        $typeworks = null;
+        $experiences_from = null;
+        $experiences_to = null;
+        $categories = null;
+        $field_career = null;
 
         if(!empty($request->search_keywords))
         {
             $keywords = $request->search_keywords;
+        }
+
+        if(!empty($request->page))
+        {
+            $this->page = $request->page;
         }
 
         if(!empty($request->search_address))
@@ -44,57 +61,58 @@ class PostController extends Controller
             $address = $request->search_address;
         }
 
-        $posts = $this->model->getWorks($this->amountPage, null,$keywords, $address);
-        $interests = $this->changeInterestsToArray(2);
-
-        $htmlPost = "";
-
-        foreach ($posts as $post)
+        if (!empty($request->sort_date))
         {
-            $htmlPost .= '<a href="" class="nav-item d-flex nav-item__post position-relative posts-item">
-                <div href="" class="nav-item__image post-item--image">
-                    <img src='. "{{ asset($post->logo) }}".' alt="">
-                </div>
-
-                <div class="nav-item__content d-flex justify-content-between position-relative">
-                    <div class="nav-item__content--left">
-                        <p href="#" class="h4">'.$post->title.'</p>
-                        <p href="#" class="h6">'.$post->name.'</p>
-                        <p class="salary"><i class="fa-solid fa-dollar-sign"></i> Lương: <span
-                                class="salary-content">'.number_format($post->salary_from, 0, ',', '.').' đ
-                                - '.number_format($post->salary_to, 0, ',', '.').' đ</span> </p>
-                        <p class="address"><i class="fa-solid fa-location-dot"></i>
-                            '.$post->address_work.'
-                        </p>
-                        <p class="date-at"><i class="fa-solid fa-clock"></i> Đăng ngày
-                            '.date('m-d-Y', strtotime($post->created_at)).' . Cập nhật ngày '.date('m-d-Y', strtotime($post->updated_at)).'
-                        </p>
-                    </div>
-                </div>';
-
-                if (in_array($post->id, $interests))
-                {
-                    $htmlPost .= '<i class="fa-solid fa-bookmark icon-interested icon-interested--save post-item--save top-0" data-id='. $post->id .'></i>';
-                }
-                else
-                {
-                    $htmlPost .= '<i class="fa-solid fa-bookmark icon-interested icon-interested--unsave post-item--save top-0" data-id='. $post->id .'></i>';
-                }
-
-                $htmlPost .= '</a>';
+            $sort_date = $request->sort_date;
         }
-        $htmlPost .= $posts->links();
 
-        echo $htmlPost;
+        if (!empty($request->sort_salary))
+        {
+            $sort_salary = $request->sort_salary;
+        }
+
+        if (!empty($request->typework))
+        {
+            $typeworks = $request->typework;
+        }
+
+        if (!empty($request->experiences_from) && !empty($request->experiences_to))
+        {
+            $experiences_from = $request->experiences_from;
+            $experiences_to = $request->experiences_to;
+        }
+
+        if (!empty($request->categories))
+        {
+            $categories = $request->categories;
+        }
+
+        if (!empty($request->field_career))
+        {
+            $field_career = $request->field_career;
+        }
+
+        $posts = $this->model->getPosts($this->amountPage, $this->page, $keywords, $address, $sort_date, $sort_salary, $typeworks, $experiences_from, $experiences_to, $categories, $field_career);
+        $pagination = $this->model->getPaginationPost($this->amountPage, $keywords, $address, $sort_date, $sort_salary, $typeworks, $experiences_from, $experiences_to, $categories, $field_career);
+
+        $this->model = new interested();
+        $interested = $this->model->getInterests(2);
+
+        return response()->json([$posts,$interested, $pagination]);
     }
 
-    public function getPaginationPost()
+    //Lấy danh sách các ngành nghề theo lĩnh vực
+    public function getFieldCareer()
     {
-        $posts = $this->model->getWorks($this->amountPage, null);
+        $this->model = new career();
 
-        return response()->json($posts);
+        $fieldCareers = $this->model->getFieldCareer();
+
+        return $fieldCareers;
     }
 
+
+    //Lấy danh sách thành phố
     public function getCities()
     {
         $this->model = new address();
@@ -104,19 +122,25 @@ class PostController extends Controller
         return $cities;
     }
 
-    //Chuyển danh sách tuyển dụng sang kiểu mảng
-    public function changeInterestsToArray($id_account)
+    //Lưu bài tuyển dụng quan tâm
+    public function postSaved(Request $request)
     {
-        $this->model = new interested();
-
-        $checkInterested = $this->model->getInterests($id_account);
-
-        $arrInterested = array();
-
-        foreach ($checkInterested as $item) {
-            array_push($arrInterested, $item->id_article);
+        if (!empty($request->id)) {
+            $id_Article = $request->id;
         }
 
-        return $arrInterested;
+        $this->model = new interested();
+        $this->model->postSaved(2, $id_Article);
+    }
+
+    //Hủy lưu bài tuyển dụng quan tâm
+    public function postUnsaved(Request $request)
+    {
+        if (!empty($request->id)) {
+            $id_Article = $request->id;
+        }
+
+        $this->model = new interested();
+        $this->model->postUnsaved(2, $id_Article);
     }
 }

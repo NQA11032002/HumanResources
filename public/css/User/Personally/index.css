@@ -128,12 +128,17 @@ main
 }
 .footer__nav
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--color-white);
 }
 .footer__nav>ul
 {
-    padding: 0 50px;
+    margin: 0 20px;
 }
+
+
 .footer__nav>ul>li>a
 {
     color: var(--color-white);
@@ -155,7 +160,7 @@ main
 }
 .footer__contact>i
 {
-    font-size: 25px;
+    font-size: 20px;
     padding-right: 10px;
     cursor: grab;
     transition: all 0.25s linear;
