@@ -1,21 +1,3 @@
-@import url('https://fonts.googleapis.com/css2? family= Manrope:wght@200;300 & display=swap');
-
-html,body{
-    font-family: 'Arimo', sans-serif;
-}
-
-:root{
-    --color-main: #f7941d;
-    --color-white: #fff;
-    --color-normal: #182642;
-    --color-header: #ffffff;
-    --color-content: #999999;
-    --color-stripes: #e8e8e8;
-    --color-pagination: #5d677a;
-    --color-footer: #181818;
-    --color-red: #ff0000;
-}
-
 a
 {
     text-decoration: none;

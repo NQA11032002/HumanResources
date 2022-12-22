@@ -26,12 +26,14 @@ class PostController extends Controller
 
     public function getPosts(Request $request)
     {
+        $wordsHot = $this->getWordHot();
+        $wordNearly = $this->getWordNearly();
         $typeWorks = $this->model->getTypeWork();
         $careers = $this->model->getCareer();
         $cities = $this->getCities();
         $fieldCareers = $this->getFieldCareer();
 
-        return view("User.Personally.Pages.Posts", compact('typeWorks', 'careers', 'fieldCareers' ,'cities'));
+        return view("User.Personally.Pages.Posts", compact('typeWorks', 'careers', 'fieldCareers', 'cities', 'wordsHot', 'wordNearly'));
     }
 
     public function createPost(Request $request)
@@ -46,49 +48,40 @@ class PostController extends Controller
         $categories = null;
         $field_career = null;
 
-        if(!empty($request->search_keywords))
-        {
+        if (!empty($request->search_keywords)) {
             $keywords = $request->search_keywords;
         }
 
-        if(!empty($request->page))
-        {
+        if (!empty($request->page)) {
             $this->page = $request->page;
         }
 
-        if(!empty($request->search_address))
-        {
+        if (!empty($request->search_address)) {
             $address = $request->search_address;
         }
 
-        if (!empty($request->sort_date))
-        {
+        if (!empty($request->sort_date)) {
             $sort_date = $request->sort_date;
         }
 
-        if (!empty($request->sort_salary))
-        {
+        if (!empty($request->sort_salary)) {
             $sort_salary = $request->sort_salary;
         }
 
-        if (!empty($request->typework))
-        {
+        if (!empty($request->typework)) {
             $typeworks = $request->typework;
         }
 
-        if (!empty($request->experiences_from) && !empty($request->experiences_to))
-        {
+        if (!empty($request->experiences_from) && !empty($request->experiences_to)) {
             $experiences_from = $request->experiences_from;
             $experiences_to = $request->experiences_to;
         }
 
-        if (!empty($request->categories))
-        {
+        if (!empty($request->categories)) {
             $categories = $request->categories;
         }
 
-        if (!empty($request->field_career))
-        {
+        if (!empty($request->field_career)) {
             $field_career = $request->field_career;
         }
 
@@ -98,7 +91,37 @@ class PostController extends Controller
         $this->model = new interested();
         $interested = $this->model->getInterests(2);
 
-        return response()->json([$posts,$interested, $pagination]);
+        return response()->json([$posts, $interested, $pagination]);
+    }
+
+    //thêm từ khóa tìm kiếm vào lịch sử
+    public function insertSearch(Request $request)
+    {
+        $this->model = new article();
+
+        $keywords = "";
+
+        if (!empty($request->search_keywords)) {
+            $keywords = $request->search_keywords;
+
+            $this->model->insertSearch(17, $keywords, date('Y-m-d'));
+        }
+    }
+
+    //lấy danh sách từ khóa tìm kiếm hot
+    public function getWordHot()
+    {
+        $keywords = $this->model->getWordHot();
+
+        return $keywords;
+    }
+
+    //Lấy từ khóa tìm kiếm gần theo tài khoản
+    public function getWordNearly()
+    {
+        $keywords = $this->model->getWordNearly(17);
+
+        return $keywords;
     }
 
     //Lấy danh sách các ngành nghề theo lĩnh vực

@@ -21,8 +21,9 @@ class HomeController extends Controller
     {
         $title = "Home Employer Hot";
         $worksHot = $this->model->getWorks($this->amountPage, "hot");
+        $sumWorks = $this->model->getSumWorkByCareer();
 
-        return view("User.Personally.Pages.PostHotEmployer", compact("title", "worksHot"));
+        return view("User.Personally.Pages.PostHotEmployer", compact("title", "worksHot", "sumWorks"));
     }
 
     //Lấy danh sách tuyển dụng nổi bật
@@ -30,8 +31,9 @@ class HomeController extends Controller
     {
         $title = "Home Employer Vip";
         $worksVip = $this->model->getWorks($this->amountPage, "vip");
+        $sumWorks = $this->model->getSumWorkByCareer();
 
-        return view("User.Personally.Pages.PostVipEmployer", compact("title", "worksVip"));
+        return view("User.Personally.Pages.PostVipEmployer", compact("title", "worksVip", "sumWorks"));
     }
 
     //Lấy danh sách tuyển dụng mới nhất
@@ -39,7 +41,16 @@ class HomeController extends Controller
     {
         $title = "Home Employer New";
         $worksNew = $this->model->getWorks($this->amountPage, "new");
+        $sumWorks = $this->model->getSumWorkByCareer();
 
-        return view("User.Personally.Pages.PostNewEmployer", compact("title", "worksNew"));
+        return view("User.Personally.Pages.PostNewEmployer", compact("title", "worksNew", "sumWorks"));
+    }
+
+    //lấy tổng bài tuyển dụng công việc theo ngành nghề
+    public function getSumWorkByCareer()
+    {
+        $result = $this->model->getSumWorkByCareer();
+
+        return $result;
     }
 }

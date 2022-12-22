@@ -200,9 +200,11 @@ $(document).ready(function () {
 
     }
 
+
     $('.post-search').submit(function (e) {
         e.preventDefault();
         page = 0;
+        insertKeyword();
         getPost();
     })
 
@@ -212,11 +214,6 @@ $(document).ready(function () {
     })
 
     $('.selected-address').on('change', function () {
-        page = 0;
-        getPost();
-    })
-
-    $('.keyword-search').on('keyup', function () {
         page = 0;
         getPost();
     })
@@ -277,6 +274,27 @@ $(document).ready(function () {
             })
         }
     })
+
+    // thêm từ khóa tìm kiếm vào lịch sử
+    function insertKeyword() {
+        let currentUrl = location.href.split('/')[2];
+        let search_keywords = $('.keyword-search').val();
+
+        $.ajax({
+            url: 'http://' + currentUrl + '/posts/insert-search',
+            type: "POST",
+            data: {
+                search_keywords: search_keywords,
+                _token: token
+            },
+            success: function () {
+                getPost();
+            },
+            error: function (error) {
+                console.log(error)
+            }
+        })
+    }
 
     // set active cho pagination
     function activePaginations() {

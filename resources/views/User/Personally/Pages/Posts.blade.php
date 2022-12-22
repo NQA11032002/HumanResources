@@ -11,20 +11,15 @@
         <div class="search__histories">
             <a href="">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                Tìm gần đây: <span>Cong nghe thong tin</span>
+                Tìm gần đây: <span>{{ $wordNearly->content }}</span>
             </a>
+
+            @foreach ($wordsHot as $word)
             <a href="">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                Từ khóa hot: <span>Marketing</span>
+                Từ khóa hot: <span>{{ $word->content }}</span>
             </a>
-            <a href="">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                Từ khóa hot: <span>Thực tập</span>
-            </a>
-            <a href="">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                Từ khóa hot: <span>Việt làm fulltime</span>
-            </a>
+            @endforeach
 
             <a class="amount-work--search">
                 Tổng <span class="total-works"></span> việc làm tại <span class="address-work"></span>
@@ -162,6 +157,7 @@
 
                 @csrf
                 @method('DELETE')
+
                 <div class="posts-items__container">
 
                 </div>

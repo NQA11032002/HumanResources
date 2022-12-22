@@ -1,0 +1,65 @@
+.form__input--lastname
+{
+    margin-left: 10px;
+}
+.form_submit--register
+{
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+}
+.contain__otp>input
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--color-content);
+
+}
+.contain__otp>span
+{
+    margin: 0 5px;
+}
+
+.form__submit--confirm
+{
+    grid-template-rows: auto auto auto auto;
+}
+.otp
+{
+    margin: 0 auto;
+    cursor: default;
+}
+.otp>p
+{
+    font-size: 14px;
+    margin-bottom: 5px
+}
+.otp>p>span
+{
+    color: var(--color-main);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.send__otp
+{
+    background-color: transparent;
+    border: none;
+    color: var(--color-main);
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+.send__otp:hover
+{
+    opacity: 80%;
+}
+.regulation>p
+{
+    margin-left: 10px;
+    color: #6e6e6e;
+    font-size: 14px;
+}
+.regulation>p>a
+{
+    color: var(--color-main);
+}

@@ -2,6 +2,11 @@
 
 use App\Http\Controllers\User\Personally\HomeController;
 use App\Http\Controllers\User\Personally\PostController;
+use App\Http\Controllers\User\Personally\LoginController;
+use App\Http\Controllers\User\Personally\LogoutController;
+use App\Http\Controllers\User\Personally\RegisterController;
+use App\Http\Controllers\User\Personally\RecoverPassword;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,7 +25,6 @@ Route::get("/", [HomeController::class, "getHome"])->name("home-post-hot");
 Route::prefix("")->name("home.")->group(function () {
     Route::get("/post-vip", [HomeController::class, "getPostVipEmployer"])->name("home-post-vip");
     Route::get("/post-new", [HomeController::class, "getPostNewEmployer"])->name("home-post-new");
-
 });
 
 Route::prefix("posts")->name("post.")->group(function () {
@@ -28,4 +32,21 @@ Route::prefix("posts")->name("post.")->group(function () {
     Route::get("/createPost", [PostController::class, "createPost"])->name("createPost");
     Route::post("/post-saved", [PostController::class, "postSaved"])->name("post-saved");
     Route::delete("/post-unsaved", [PostController::class, "postUnsaved"])->name("post-unsaved");
+    Route::post("/insert-search", [PostController::class, "insertSearch"])->name("insert-search");
+});
+
+Route::prefix("login")->name("login.")->group(function () {
+    Route::get('/', [LoginController::class, "index"])->name("show");
+    Route::get('/check', [LoginController::class, "checkAccount"])->name("login-check");
+});
+
+Route::get('/logout', [LogoutController::class, "logout"])->name("logout");
+
+Route::prefix("register")->name("register.")->group(function () {
+    Route::get('/', [RegisterController::class, "index"])->name("show");
+    Route::get('/confirm', [RegisterController::class, "confirmEmail"])->name("confirm");
+});
+
+Route::prefix("recover")->name("recover.")->group(function () {
+    Route::get('/', [RecoverPassword::class, "index"])->name("show");
 });
