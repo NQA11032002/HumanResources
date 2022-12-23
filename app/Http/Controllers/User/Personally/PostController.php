@@ -24,17 +24,17 @@ class PostController extends Controller
     {
         $keywords = "";
         $address = "";
-        
+
         if(!empty($request->search_keywords))
         {
             $keywords = $request->search_keywords;
         }
-        
+
         if(!empty($request->search_address))
         {
             $address = $request->search_address;
         }
-        
+
         $posts = $this->model->getWorks($this->amountPage, null,$keywords, $address);
         $typeWorks = $this->model->getTypeWork();
         $careers = $this->model->getCareer();
