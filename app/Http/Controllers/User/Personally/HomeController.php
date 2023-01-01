@@ -3,11 +3,8 @@
 namespace App\Http\Controllers\User\Personally;
 
 use App\Http\Controllers\Controller;
-use App\Models\User\Personally\address;
 use App\Models\User\Personally\article;
-use App\Models\User\Personally\career;
-use App\Models\User\Personally\interested;
-use Symfony\Component\HttpFoundation\Request;
+
 
 class HomeController extends Controller
 {
@@ -24,12 +21,9 @@ class HomeController extends Controller
     {
         $title = "Home Employer Hot";
         $worksHot = $this->model->getWorks($this->amountPage, "hot");
-        $interests = $this->changeInterestsToArray(2);
-        $cities = $this->getCity();
-        $careers = $this->getCareer();
-        $levels = $this->getLevel();
+        $sumWorks = $this->model->getSumWorkByCareer();
 
-        return view("User.Personally.Pages.PostHotEmployer", compact("title", "worksHot", "interests", "cities", "careers", "levels"));
+        return view("User.Personally.Pages.PostHotEmployer", compact("title", "worksHot", "sumWorks"));
     }
 
     //Lấy danh sách tuyển dụng nổi bật
@@ -37,12 +31,9 @@ class HomeController extends Controller
     {
         $title = "Home Employer Vip";
         $worksVip = $this->model->getWorks($this->amountPage, "vip");
-        $interests = $this->changeInterestsToArray(2);
-        $cities = $this->getCity();
-        $careers = $this->getCareer();
-        $levels = $this->getLevel();
+        $sumWorks = $this->model->getSumWorkByCareer();
 
-        return view("User.Personally.Pages.PostVipEmployer", compact("title", "worksVip", "interests", "cities", "careers", "levels"));
+        return view("User.Personally.Pages.PostVipEmployer", compact("title", "worksVip", "sumWorks"));
     }
 
     //Lấy danh sách tuyển dụng mới nhất
@@ -50,76 +41,16 @@ class HomeController extends Controller
     {
         $title = "Home Employer New";
         $worksNew = $this->model->getWorks($this->amountPage, "new");
-        $interests = $this->changeInterestsToArray(2);
-        $cities = $this->getCity();
-        $careers = $this->getCareer();
-        $levels = $this->getLevel();
+        $sumWorks = $this->model->getSumWorkByCareer();
 
-        return view("User.Personally.Pages.PostNewEmployer", compact("title", "worksNew", "interests", "cities", "careers", "levels"));
+        return view("User.Personally.Pages.PostNewEmployer", compact("title", "worksNew", "sumWorks"));
     }
 
-    //lấy danh sách thành phố
-    public function getCity()
+    //lấy tổng bài tuyển dụng công việc theo ngành nghề
+    public function getSumWorkByCareer()
     {
-        $this->model = new address();
-        $cities = $this->model->getCity();
+        $result = $this->model->getSumWorkByCareer();
 
-        return $cities;
-    }
-
-    //Lấy danh sách ngành nghề
-    public function getCareer()
-    {
-        $this->model = new career();
-        $careers = $this->model->getFieldCareer();
-
-        return $careers;
-    }
-
-    //Lấy danh sách ngành nghề
-    public function getLevel()
-    {
-        $this->model = new career();
-        $levels = $this->model->getLevel();
-
-        return $levels;
-    }
-
-    //Chuyển danh sách tuyển dụng sang kiểu mảng
-    public function changeInterestsToArray($id_account)
-    {
-        $this->model = new interested();
-
-        $checkInterested = $this->model->getInterests($id_account);
-
-        $arrInterested = array();
-
-        foreach ($checkInterested as $item) {
-            array_push($arrInterested, $item->id_article);
-        }
-
-        return $arrInterested;
-    }
-
-    //Lưu bài tuyển dụng quan tâm
-    public function postSaved(Request $request)
-    {
-        if (!empty($request->id)) {
-            $id_Article = $request->id;
-        }
-
-        $this->model = new interested();
-        $this->model->postSaved(2, $id_Article);
-    }
-
-    //Hủy lưu bài tuyển dụng quan tâm
-    public function postUnsaved(Request $request)
-    {
-        if (!empty($request->id)) {
-            $id_Article = $request->id;
-        }
-
-        $this->model = new interested();
-        $this->model->postUnsaved(2, $id_Article);
+        return $result;
     }
 }

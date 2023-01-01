@@ -1,21 +1,3 @@
-@import url('https://fonts.googleapis.com/css2? family= Manrope:wght@200;300 & display=swap');
-
-html,body{
-    font-family: 'Arimo', sans-serif;
-}
-
-:root{
-    --color-main: #f7941d;
-    --color-white: #fff;
-    --color-normal: #182642;
-    --color-header: #ffffff;
-    --color-content: #999999;
-    --color-stripes: #e8e8e8;
-    --color-pagination: #5d677a;
-    --color-footer: #181818;
-    --color-red: #ff0000;
-}
-
 a
 {
     text-decoration: none;
@@ -107,6 +89,71 @@ main
 {
     color: var(--color-main);
 }
+.nav-logined
+{
+    position: relative;
+}
+
+.nav-logined:hover>.logined__contain
+{
+    height: 160px;
+    opacity: 1;
+}
+
+.logined
+{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.logined>img
+{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid var(--color-stripes);
+}
+.logined>p
+{
+    margin: auto 0;
+    padding-left: 10px;
+    cursor: default;
+}
+
+.logined__contain
+{
+    position: absolute;
+    transform-origin: top;
+    transition-property: transform;
+    transition-duration: 0.25s;
+    left: -8px;
+    top: 48.5px;
+    height: 0px;
+    width: 190px;
+    opacity: 0;
+    background: var(--color-white);
+    box-shadow: 0 2px 1px rgb(0, 0, 0 , 0.1);
+    transition: all 0.25s linear;
+}
+.logined__contain::after
+{
+    content: "";
+    position: absolute;
+    z-index: 9;
+    top: -20px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 20px;
+    border-bottom: 5px solid var(--color-white);
+}
+.logined__contain>ul
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 0 5px;
+}
+
 /* ------------------------------------------------------------- Footer -------------------------------------------------------------*/
 .footer__nav--logo
 {
@@ -128,12 +175,17 @@ main
 }
 .footer__nav
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--color-white);
 }
 .footer__nav>ul
 {
-    padding: 0 50px;
+    margin: 0 20px;
 }
+
+
 .footer__nav>ul>li>a
 {
     color: var(--color-white);
@@ -155,7 +207,7 @@ main
 }
 .footer__contact>i
 {
-    font-size: 25px;
+    font-size: 20px;
     padding-right: 10px;
     cursor: grab;
     transition: all 0.25s linear;

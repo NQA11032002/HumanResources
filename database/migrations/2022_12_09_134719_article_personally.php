@@ -30,7 +30,8 @@ return new class extends Migration
 
             $table->foreign("id_personally")->references("id")->on("infor_personally");
             $table->foreign("id_level")->references("id")->on("level_personally");
-        });    }
+        });
+    }
 
     /**
      * Reverse the migrations.
